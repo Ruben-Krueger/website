@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>How I Made This - Ruben Krueger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.6e80aaa638b281a589fe1a55ba71773fe4b6396d42b47a213f43335c27cfbb6f.css">
+  
+
+  
+    <meta name="description" content="A short explanation on how I made this website."/>
+    <meta property="og:title" content="How I Made This"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/how-i-made-this/"/>
+    <meta property="og:image" content="images/laptop-code.jpg"/>
+    <meta property="og:description" content="A short explanation on how I made this website."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@rubenkrueger_"/>
+    <meta name="twitter:creator" content="@rubenkrueger_"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="">Ruben Krueger</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-blog">
+                <a href="/posts/">Blog</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+      <div class="author">
+  <img width="30" class="author-image" src="/images/profile.jpg" />
+  <span class="author-name">Ruben Krueger</span>
+  <span class="author-divider"></span>
+  <span class="author-date">September 2, 2021</span>
+</div>
+    
+    <div class="intro">
+      <h1>How I Made This<span class="dot">.</span></h1>
+      
+      <img src="/images/laptop-code.jpg" />
+      
+    </div>
+    <div class="content">
+      <p><em>Image credit: James Harrison / Unsplash</em></p>
+<p>There are no shortage of front-end frameworks, no-code website builders, and website templates available. Each has their strengths and weaknesses, and I&rsquo;ve used almost all of them: Wix, Squarespace, React, Vue, Bootstrap, to name a few. On my previous personal websites, I would use a template like <a href="https://github.com/tailwindtoolbox/Profile-Card">this</a> and customize it.</p>
+<p>However, this approach does not lend itself to making a blog, where content needs to be served dynamically.  Moreover, I wanted an easy method of automated deployments from a git repo. Thus, a couple weeks ago I decided to try something new.</p>
+<h2 id="building-the-site-hugo">Building the site: Hugo</h2>
+<p>Before this site, there was one major website development tool that I had never used: <a href="https://www.cloudflare.com/learning/performance/static-site-generator/">static site generators</a>. Static site generators are tools that build websites from templates and user-created data (generally Markdown). Static site generators are a common way of making blogs, API documentation, and more. There are a large number of static site generators out there, but <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://gohugo.io/">Hugo</a> are among the most popular. I was too busy (read: lazy) to <a href="https://stackify.com/install-ruby-on-your-mac-everything-you-need-to-get-going/">fix my Ruby environment</a> on my Mac, so I went with Hugo, which is powered by Go.</p>
+<p>To get started with Hugo, follow these <a href="https://gohugo.io/getting-started/quick-start/">instructions</a>. Once you have created a Hugo website, you will be presented with this folder structure:</p>
+<p><img src="/images/hugo-default.png" alt="Hugo default folder structure"></p>
+<p>Files like images will be stored in <code>/static</code> and <code>/content</code> is where you write markdown, which is styled according to your template. Next, you will need to add a theme. I use the <a href="https://github.com/zerostaticthemes/hugo-winston-theme">Winston</a> theme, but there are a lot of other great options. The final generated HTML and other resources gets put into <code>/public</code>, which will ultimately be served to the client.  After you do run <code>hugo</code>, the deployment-ready site is available there.</p>
+<blockquote>
+<p>The themes available will make or break your website. When deciding on a static site generator, first pick one with a template that you like.</p>
+</blockquote>
+<h2 id="deploying">Deploying</h2>
+<p>I used <a href="https://www.netlify.com/">Netlify</a> to host this website, as there is a great free tier and easy deployments using Github. Once you have it deployed, it will be available at a url like <a href="https://pensive-gates-f6191a.netlify.app">https://pensive-gates-f6191a.netlify.app</a>. While pensive-gates-f6191a.netlify.app is a great name, it&rsquo;s not the easiest to remember. Thus, you can follow <a href="https://docs.netlify.com/domains-https/custom-domains/">these steps</a> to add a custom domain.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Building websites can be confusing and frustrating, which has led to the profileration of no-code sites like Webflow and Wix. Overall, I have found Hugo to be an excellent static site generator and will be using it for more projects.</p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/rubenkrueger_" title="twitter" target="_blank" rel="noopener">
+          <img src="/images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/Ruben-Krueger" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/ruben-krueger" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-instagram">
+        <a href="https://www.instagram.com/rubenkrueger" title="instagram" target="_blank" rel="noopener">
+          <img src="/images/social/instagram.svg" width="24" height="24" alt="instagram"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
