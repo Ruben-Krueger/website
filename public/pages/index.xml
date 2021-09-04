@@ -15,5 +15,17 @@
       <description>My favorite things to do are reading, running, and eating pesto pizza — especially at the same time.</description>
     </item>
     
+    <item>
+      <title>Projects</title>
+      <link>/pages/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/projects/</guid>
+      <description>VaxMyFam.org With a group of volunteers, I helped create a website to assist non-English speakers in seven US counties in receiving vaccine information and FAQs accurately and efficiently.
+Featured in: Stanford Daily
+CryptoUpdater An app to view cryptocurrency data. Published on the Google Play Store.
+Source code</description>
+    </item>
+    
   </channel>
 </rss>
