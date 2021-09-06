@@ -10,7 +10,7 @@
     <div class="intro">
       <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
       {{ if .Params.image }}
-      <img src="{{ .Params.image | relURL }}" />
+      <img src="{{ .Params.image | relURL }}" width="200" class="center"/>
       {{ end }}
     </div>
     <div class="content">
@@ -23,6 +23,14 @@
         crossorigin="anonymous"
         async>
     </script> 
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    </style>
   </div>
 {{ end }}
 

@@ -8,7 +8,7 @@ menu:
 
 ## VaxMyFam.org
 
-![e](/images/vaxmyfam.png)
+![vax my fam](/images/vaxmyfam.png)
 
 With a group of volunteers, I helped create a website to assist non-English speakers in seven US counties in receiving vaccine information and FAQs accurately and efficiently.
 
