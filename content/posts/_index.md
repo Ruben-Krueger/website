@@ -5,3 +5,5 @@ menu:
   main:
     name: "Blog"
 ---
+
+My thoughts on politics, science, technology, and everything else.
