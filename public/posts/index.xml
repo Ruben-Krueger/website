@@ -8,6 +8,20 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How to Make Tic Tac Toe in Python</title>
+      <link>/posts/how-to-make-tic-tac-toe-in-python/</link>
+      <pubDate>Sun, 12 Sep 2021 11:36:02 -0700</pubDate>
+      
+      <guid>/posts/how-to-make-tic-tac-toe-in-python/</guid>
+      <description>Introduction Getting Started This tutorial assumes a basic understanding of programming (e.g., variables, functions, loops).
+Mac MacOS already ships with Python 2.7.
+https://www.python.org/downloads/
+Windows Linux If you&amp;rsquo;re on Linux, you most likely have Python already installed. Besides, if you&amp;rsquo;re on Linux, you probably already know what you&amp;rsquo;re doing.
+Subproblems When
+Conclusion Extensions  Our game assumes the player&amp;rsquo;s input is correctly formatted (two valid indices separated by a comma). Can you write a program Our board is printed  </description>
+    </item>
+    
+    <item>
       <title>The Darkest Net</title>
       <link>/posts/the-darkest-net/</link>
       <pubDate>Mon, 06 Sep 2021 11:24:00 -0700</pubDate>

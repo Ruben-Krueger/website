@@ -3,6 +3,8 @@
 
 
 {{ define "main" }}
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
   <div class="blog">
     {{ if .Site.Params.showAuthorOnPosts }}
       {{ partial "author.html" . }}
@@ -10,7 +12,10 @@
     <div class="intro">
       <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
       {{ if .Params.image }}
-      <img src="{{ .Params.image | relURL }}" width="200" class="center"/>
+      <div>
+        <img src="{{ .Params.image | relURL }}" width="200" class="center"/>
+     
+      </div>
       {{ end }}
     </div>
     <div class="content">

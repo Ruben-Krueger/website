@@ -7,15 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>/pages/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/pages/about/</guid>
-      <description>My favorite things to do are reading, running, and eating pesto pizza — especially at the same time.</description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>/pages/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
