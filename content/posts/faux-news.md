@@ -4,6 +4,7 @@ date: 2021-08-30T08:40:33-07:00
 description: 'What is the price of vaccine misinformation?'
 image: images/doctor.jpeg
 draft: false
+category: article
 ---
 
   

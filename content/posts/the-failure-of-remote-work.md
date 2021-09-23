@@ -5,6 +5,8 @@ description: 'Another perspective on remote work, using some computer science.'
 caption: 'Photo credit to Unsplash'
 image: images/remote-work-effects.jpg
 draft: false
+categories: ["article"]
+tags: ["remote work", "computer science"]
 ---
 
 

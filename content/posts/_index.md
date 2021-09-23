@@ -6,4 +6,4 @@ menu:
     name: "Blog"
 ---
 
-My thoughts on politics, science, technology, and everything else.
+My thoughts on politics, science, technology, and everything else. Plus some badly-written short stories.

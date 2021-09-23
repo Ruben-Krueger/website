@@ -1,9 +1,11 @@
 <div class="summary">
-  {{ if .Site.Params.showAuthorOnPosts }}
-    {{ partial "author.html" . }}
+  {{ if .Site.Params.showAuthorOnPosts }} 
+    {{ partial "author.html" . }} 
   {{ else }}
-    <div class="summary-date">{{ dateFormat "Jan 2, 2006" .Date }}</div>
+    <div class="summary-date">{{ dateFormat "Jan 2, 2006" .Date }}</div> 
   {{ end }}
+
+
   <div class="row">
     <div class="column">
       <img src="/{{ .Params.image}}" class="summary-image"/>
@@ -38,4 +40,13 @@
   clear: both;
   display: table;
 }
+
+.tag {
+  margin-top: -15px;
+  margin-bottom: -15px;
+  margin-left: 15px;
+}
+
+
+
 </style>

@@ -5,6 +5,25 @@
     <link>/tags/</link>
     <description>Recent content in Tags on Ruben Krueger</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Sep 2021 18:35:53 -0700</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>computer science</title>
+      <link>/tags/computer-science/</link>
+      <pubDate>Mon, 13 Sep 2021 18:35:53 -0700</pubDate>
+      
+      <guid>/tags/computer-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>remote work</title>
+      <link>/tags/remote-work/</link>
+      <pubDate>Mon, 13 Sep 2021 18:35:53 -0700</pubDate>
+      
+      <guid>/tags/remote-work/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

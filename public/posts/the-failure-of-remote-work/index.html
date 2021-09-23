@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>The Effects of Remote Work Explained with Graphs - Ruben Krueger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.6e80aaa638b281a589fe1a55ba71773fe4b6396d42b47a213f43335c27cfbb6f.css">
+  
+
+  
+    <meta name="description" content="Another perspective on remote work, using some computer science."/>
+    <meta property="og:title" content="The Effects of Remote Work Explained with Graphs"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/the-failure-of-remote-work/"/>
+    <meta property="og:image" content="images/remote-work-effects.jpg"/>
+    <meta property="og:description" content="Another perspective on remote work, using some computer science."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@rubenkrueger_"/>
+    <meta name="twitter:creator" content="@rubenkrueger_"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="">Ruben Krueger</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-blog">
+                <a href="/posts/">Blog</a>
+            </li>
+        
+            <li class="menu-item-contact">
+                <a href="/pages/contact/">Contact</a>
+            </li>
+        
+            <li class="menu-item-projects">
+                <a href="/pages/projects/">Projects</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+  <div class="blog">
+    
+      <div class="author">
+  <img width="30" class="author-image" src="/images/profile.jpg" />
+  <span class="author-name">Ruben Krueger</span>
+  <span class="author-divider"></span>
+  <span class="author-date">September 13, 2021</span>
+</div>
+    
+    <div class="intro">
+      <h1>The Effects of Remote Work Explained with Graphs<span class="dot">.</span></h1>
+      
+      <div>
+        <img src="/images/remote-work-effects.jpg" width="200" class="center"/>
+     
+      </div>
+      
+    </div>
+    <div class="content">
+      <p>When you are able to reach anyone in your remote organization instantly through Slack or email, shouldn&rsquo;t barriers across teams and locations disappear? Shouldn&rsquo;t information sharing increase and ideas be generated more easily? One would think so — is this not a benefit of working in a virtual environment?</p>
+<p>Whether or not knowledge workers will return back to the office is hotly debated right now. Major companies like Apple and Google have delayed their plans to return back to office, and regardless of the ultimate outcome, our relationship to where we work has fundamentally been changed. A common argument in favor of remote work is that since workers can be just as productive at home, why pay the time and expense of working from a cubicle?</p>
+<p>A <a href="https://www.nature.com/articles/s41562-021-01196-4">recent study by Microsoft</a> has complicated such claims. Researchers analyzed communication data of Microsoft employees, such as time spent in meetings and emails sent, before and after the pandemic lockdowns in March of 2020. In short, they found that the groups of people who worked together became &ldquo;more static and siloed&rdquo; and that this may impede information-sharing across the company. To make sense of  this result, we will turn to a foundation of computer science: graphs.</p>
+<p>In computer science, a graph is a data structure represented by nodes (circles) and edges (lines). These graphs can model a wide range of entities: cities and roads, people and friendships, computers and ethernet cables. In the below graph, we have &ldquo;Tech-R-Us,&rdquo; a hypothetical tech company. Each node (circle) represents an employee and each edge (line) represents a personal relationship — two people who meet about increasing conversions, for instance.</p>
+<p><img src="/images/tech-r-us-ideal.png" alt="Graph "></p>
+<p>In the above scenario, everyone knows everyone else, or at least knows someone who knows that other person. (Of course, in a company with 180,000 employees like Microsoft, this would be impossible). If someone on the mobile development team needs to understand why a server has a certain bug, it will not take them long to find someone on the server team who knows why.</p>
+<p>According to the Microsoft study, when the remote work revolution happened, Tech-R-Us would look more like this:</p>
+<p><img src="/images/tech-r-us-remote.png" alt="Graph in remote work environment"></p>
+<p>In other words, each team is interacting less with the other teams. And when workers do interact, it tends to be over asynchronous methods, like email. With these observations, they make the conclusion information sharing will be impeded. Why does information sharing matter? Knowledge work is all about information sharing and the generation of ideas.</p>
+<p>Without a doubt, remote workers can be very productive. But this is not so clear over the long term. There is research which shows that the consolidation of <a href="https://eml.berkeley.edu/~moretti/clusters.pdf?utm_source=npr_newsletter&amp;utm_medium=email&amp;utm_content=20210713&amp;utm_term=5565069&amp;utm_campaign=money&amp;utm_id=47783854&amp;orgid=&amp;utm_att1=money">inventors into superstar cities like San Francisco</a>
+has boosted the number of patents created, compared to the case when inventors are spread evenly across the country. It seems to me that this is a phenomenon which is more powerful than the ping of a Slack message.</p>
+<h2 id="remotely-alone">Remotely Alone</h2>
+<p>The remote work revolution has implications beyond our economy as well. In the ground-breaking book, &ldquo;Bowling Alone&rdquo;, the political scientist Robert Putnam describes the disintegration of traditional social ties such as the church and — as the title would suggest — bowling leagues. This trend has worsened and <a href="https://mcc.gse.harvard.edu/reports/loneliness-in-america">loneliness is now described as an &ldquo;epidemic&rdquo;</a>.</p>
+<p>In a society where we are &ldquo;bowling alone&rdquo; we should not also &ldquo;work alone.&rdquo; Yes, there are times when remote work is necessary — during a pandemic or when childcare is unavailable, for example. But when the number of ties in our social networks (not on Facebook, but real life) is decreasing, we need to focus on our in-person relationships, not virtual ones.</p>
+<p>Remote work has been touted by some as the triumph of the employee over the employer. The freedom to work from home has been framed as a way to spend less time in traffic and more time with family. In many cases this true. But in other cases, it is patently wrong. In the fight between labor and capital, we must not forget who we are fighting against, but who we are fighting <em>with</em>: our coworkers.</p>
+
+    </div>
+
+    
+
+    <script src="https://utteranc.es/client.js"
+        repo="Ruben-Krueger/website"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script> 
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    </style>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/rubenkrueger_" title="twitter" target="_blank" rel="noopener">
+          <img src="/images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/Ruben-Krueger" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/ruben-krueger" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-instagram">
+        <a href="https://www.instagram.com/rubenkrueger" title="instagram" target="_blank" rel="noopener">
+          <img src="/images/social/instagram.svg" width="24" height="24" alt="instagram"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

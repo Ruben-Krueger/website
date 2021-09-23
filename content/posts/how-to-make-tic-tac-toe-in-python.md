@@ -4,6 +4,7 @@ date: 2021-09-12T11:36:02-07:00
 description: 'A tutorial on a '
 image: images/game.gif
 draft: true
+category: article
 ---
 
 

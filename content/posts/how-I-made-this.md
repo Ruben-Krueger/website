@@ -4,6 +4,7 @@ date: 2021-09-02T07:00:04-07:00
 description: 'A short explanation on how I made this website.'
 image: images/laptop-code.jpg
 draft: false
+category: article
 ---
 
 *Image credit: James Harrison / Unsplash*

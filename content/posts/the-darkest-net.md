@@ -4,6 +4,7 @@ date: 2021-09-06T11:24:00-07:00
 description: "The worst parts of the internet are not obscure websites on the Dark Web, but plainly visible for us all."
 image: images/darkest-net.png
 draft: false
+category: article
 ---
 
 One does not have to spend long on the internet to see vile, offensive, or otherwise malicious content. The classic example is the comments section of a political YouTube video, where interlocuters compare each other to historical tyrants. In Jamie Bartlett's book *The Dark Net*, the journalist explores the Dark Net, which he defines as "internet underworlds set apart yet connected to the internet we inhabit, worlds of freedom and anonymity... often uncensored unregulated and outside societys norms."

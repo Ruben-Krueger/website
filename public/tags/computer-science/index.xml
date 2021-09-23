@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer science on Ruben Krueger</title>
+    <link>/tags/computer-science/</link>
+    <description>Recent content in computer science on Ruben Krueger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Sep 2021 18:35:53 -0700</lastBuildDate><atom:link href="/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Effects of Remote Work Explained with Graphs</title>
+      <link>/posts/the-failure-of-remote-work/</link>
+      <pubDate>Mon, 13 Sep 2021 18:35:53 -0700</pubDate>
+      
+      <guid>/posts/the-failure-of-remote-work/</guid>
+      <description>When you are able to reach anyone in your remote organization instantly through Slack or email, shouldn&amp;rsquo;t barriers across teams and locations disappear? Shouldn&amp;rsquo;t information sharing increase and ideas be generated more easily? One would think so — is this not a benefit of working in a virtual environment?
+Whether or not knowledge workers will return back to the office is hotly debated right now. Major companies like Apple and Google have delayed their plans to return back to office, and regardless of the ultimate outcome, our relationship to where we work has fundamentally been changed.</description>
+    </item>
+    
+  </channel>
+</rss>
