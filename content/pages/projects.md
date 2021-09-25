@@ -1,6 +1,5 @@
 ---
 title: 'Projects'
-# image: images/profile.jpg
 menu:
   main:
     name: "Projects"

@@ -43,8 +43,12 @@
   </url><url>
     <loc>/pages/contact/</loc>
   </url><url>
+    <loc>/pages/success/</loc>
+  </url><url>
     <loc>/pages/</loc>
   </url><url>
     <loc>/pages/projects/</loc>
+  </url><url>
+    <loc>/pages/thoughts/</loc>
   </url>
 </urlset>

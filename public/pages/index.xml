@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>Contact Success</title>
+      <link>/pages/success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/success/</guid>
+      <description>Yay! Thanks for reaching out. I should respond soon!</description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>/pages/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -25,6 +34,18 @@
 Featured in: Stanford Daily
 CryptoUpdater An app to view cryptocurrency data. Published on the Google Play Store.
 Source code</description>
+    </item>
+    
+    <item>
+      <title>Thoughts</title>
+      <link>/pages/thoughts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/thoughts/</guid>
+      <description>Pithy observations and questions that I&amp;rsquo;ve been pondering. Some of these may be the start of a blog post :)
+ How do we reduce the bifurication of our economy into high-paid knowledge workers and low-paid service workers?
+Should we breakup Facebook?
+How do we reduce political polarization, given the incentives of social media companies and right-wing media?</description>
     </item>
     
   </channel>
