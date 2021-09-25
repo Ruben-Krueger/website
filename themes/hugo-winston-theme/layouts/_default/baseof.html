@@ -21,7 +21,7 @@
 
   {{ block "meta_tags" . }}
     {{ if .Params.description }}<meta name="description" content="{{ .Params.description }}"/>{{ end }}
-    <meta property="og:title" content="{{ .Title }}"/>
+    <meta property="og:title" content="{{ .Title }} | Ruben Krueger"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
     <!--     TODO: BETTER FIX -->    

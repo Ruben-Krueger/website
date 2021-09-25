@@ -10,4 +10,39 @@
         {{end}}
     </ul>
   </div>
+
+
+<!--     hack for mobile devices -->
+<!-- TODO: Fix css -->     
+ <div class="mobile-nav">
+        <ul>
+        {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+              <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+                  <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              </li>
+          {{end}}
+      </ul>
+
+
+     </div>
+
+  
+
+
+
+  <style>
+    @media (max-width: 499px) {
+        .mobile-nav {
+          display: inline-block;
+        }
+      }
+
+    @media (min-width: 500px) {
+        .mobile-nav {
+          display: none;
+        }
+      }
+  </style>
+
 </div>
