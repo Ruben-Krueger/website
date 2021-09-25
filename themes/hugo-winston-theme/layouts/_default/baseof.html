@@ -24,7 +24,8 @@
     <meta property="og:title" content="{{ .Title }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
-    {{ if .Params.image }}<meta property="og:image" content="www.rubenkrueger.com{{ .Params.image}}"/>{{ end }}
+    <!--     TODO: BETTER FIX -->    
+ {{ if .Params.image }}<meta property="og:image" content="www.rubenkrueger.com/{{ .Params.image}}"/>{{ end }}
     {{ if .Params.description }}<meta property="og:description" content="{{ .Params.description }}"/>{{ end }}
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:title" content="{{ .Params.description }}"/>
