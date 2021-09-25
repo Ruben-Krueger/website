@@ -1,8 +1,19 @@
 {{ define "header_css" }}{{ end }}
+
 {{ define "body_classes" }}page-blog-single{{ end }}
 
 
 {{ define "main" }}
+
+
+    <meta property="og:image" content="{{.Params.image}}" />
+    <meta property="og:title" content="{{.Title}}" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="{{.Params.absURL}}" />
+    <meta property="og:image" content="{{ .Params.image | relURL }}" />
+    <meta property="og:description" content="{{.Params.description}}" />
+
+
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
   <div class="blog">
@@ -14,13 +25,13 @@
       {{ if .Params.image }}
       <div>
         <img src="{{ .Params.image | relURL }}" width="200" class="center"/>
-     
       </div>
       {{ end }}
     </div>
     <div class="content">
       {{ .Content }}
     </div>
+
 
     <!-- <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61367b26523659001347f27a&product=sticky-share-buttons" async="async"></script>
     <div class="sharethis-sticky-share-buttons"></div> -->
