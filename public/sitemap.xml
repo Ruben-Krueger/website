@@ -45,6 +45,10 @@
   </url><url>
     <loc>/pages/success/</loc>
   </url><url>
+    <loc>/pages/email-subscribe/</loc>
+  </url><url>
+    <loc>/pages/email-unsubscribe/</loc>
+  </url><url>
     <loc>/pages/</loc>
   </url><url>
     <loc>/pages/projects/</loc>

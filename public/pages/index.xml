@@ -25,6 +25,24 @@
     </item>
     
     <item>
+      <title>Email Subscription</title>
+      <link>/pages/email-subscribe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/email-subscribe/</guid>
+      <description>Thanks for signing up! You&amp;rsquo;ll recieve an email from me whenever I post again :)</description>
+    </item>
+    
+    <item>
+      <title>Email Unsubscribed</title>
+      <link>/pages/email-unsubscribe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/email-unsubscribe/</guid>
+      <description>Oh no! Sorry to see you go.</description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>/pages/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
