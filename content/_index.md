@@ -4,6 +4,6 @@ description: Welcome page to Ruben Krueger's website
 image: images/profile.jpeg
 ---
 
-Hey! I'm a recent Stanford graduate. I'm currently working on Comet Healthcare (YC S21), a company that's bringing physical therapy into the 21st century. I'm passionate about health equity, social justice, and most of all, running.
+Hey! I'm a recent Stanford graduate in computer science. I'm currently working at Sprinter Health, a startup that is making blood draws, vitals checks, and other vital health services more accessible to all.
 
-I also love to write and thus blog on science, technology, and politics. Care to check it out?
+When I'm not coding, you may find me running, losing at Chess, or thinking about how we can more healthcare more affordable and accessible. I also love to write and thus blog on science, technology, and politics. Care to check it out?
