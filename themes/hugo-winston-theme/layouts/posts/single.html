@@ -14,19 +14,29 @@
     {{ end }}
     <div class="intro">
       <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
-      {{ if .Params.image }}
+      
+     {{ if .Params.image }}
       <div>
-        <img src="{{ .Params.image | relURL }}" width="200" class="center"/>
+        <img src="{{ .Params.image | relURL }}"class="center"/>
       </div>
       {{ end }}
     </div>
+    <div>
+
+
+
+    </div>
+    
     <div class="content">
       {{ .Content }}
     </div>
+    <div>
 
-
-    <!-- <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61367b26523659001347f27a&product=sticky-share-buttons" async="async"></script>
+	{{partial "partials/email-form.html"}}
+    </div>
+	<!-- <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61367b26523659001347f27a&product=sticky-share-buttons" async="async"></script>
     <div class="sharethis-sticky-share-buttons"></div> -->
+
 
     <script src="https://utteranc.es/client.js"
         repo="Ruben-Krueger/website"
@@ -40,8 +50,9 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
-      }
+        max-width: 100px;
+/*        width: 50%;
+*/      }
     </style>
   </div>
 {{ end }}
