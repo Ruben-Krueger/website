@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/an-unfortunate-experiment/</loc>
-    <lastmod>2021-09-22T17:23:42-07:00</lastmod>
+    <loc>/posts/an-uncomfortable-truth/</loc>
+    <lastmod>2021-09-27T17:05:12-07:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2021-09-27T17:05:12-07:00</lastmod>
+  </url><url>
+    <loc>/posts/an-unfortunate-experiment/</loc>
     <lastmod>2021-09-22T17:23:42-07:00</lastmod>
   </url><url>
     <loc>/categories/article/</loc>
