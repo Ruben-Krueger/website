@@ -18,9 +18,15 @@
      {{ if .Params.image }}
       <div>
         <img src="{{ .Params.image | relURL }}"class="center"/>
-      </div>
+
+	</div>
       {{ end }}
-    </div>
+    
+	</div>
+
+ {{if .Params.caption}}
+          <em><p style="text-align: center">{{.Params.caption}}</p></em>
+        {{end}}
     <div>
 
 

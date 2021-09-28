@@ -5,6 +5,7 @@ description: 'What is the price of vaccine misinformation?'
 image: images/doctor.jpeg
 draft: false
 category: article
+caption: 'Photo credit Mulyadi / Unsplash'
 ---
 
   
