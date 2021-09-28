@@ -17,11 +17,10 @@
       
      {{ if .Params.image }}
       <div>
-        <img src="{{ .Params.image | relURL }}"class="center"/>
+        <img style="max-width:700px" src="{{ .Params.image | relURL }}"class="center"/>
 
 	</div>
       {{ end }}
-    
 	</div>
 
  {{if .Params.caption}}
@@ -29,7 +28,7 @@
         {{end}}
     <div>
 
-
+{{partial "partials/share.html" .}}
 
     </div>
     
@@ -37,8 +36,6 @@
       {{ .Content }}
     </div>
     <div>
-
-	{{partial "partials/email-form.html"}}
     </div>
 	<!-- <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61367b26523659001347f27a&product=sticky-share-buttons" async="async"></script>
     <div class="sharethis-sticky-share-buttons"></div> -->

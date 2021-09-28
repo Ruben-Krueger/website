@@ -4,6 +4,7 @@ date: 2021-09-27T17:05:12-07:00
 description: 'What is the true cost of unaffordable drugs?'
 image: images/drugs-pills-spilled.jpg
 caption: 'Photo credit to Christina Victoria Craft / Unsplash'
+time: "5 mins"
 draft: false
 ---
 
