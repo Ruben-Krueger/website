@@ -38,7 +38,7 @@ ___
 
 
 
-When confronted with uncomfortable truths, we can choose to ignore them or act upon them. But now, dear reader, regardless of what you decide to do, you must live for the rest of your days knowing that people like you are dying everyday, not because Medicine does not have an answer, but because our society chooses to let them die. This is what it means to distribute healthcare based on wealth, rather than justice and relative need.
+When confronted with uncomfortable truths, we can choose to ignore them or act upon them. But now, dear reader, regardless of what you decide to do, you must live for the rest of your days knowing that people like you are dying everyday, not because Medicine does not have an answer, but because our society chooses to let them die.
 
 This is only partly a proclamation of despair and resentment. Because each one of us is a small cog, I am not optimistic in a revolution to change the health care machine anytime soon. But for the average patient, I do have some advice: 1) use [GoodRx.com](https://www.goodrx.com) to get coupons for prescription drugs 2) [use the limited ways available](https://www.magnifymoney.com/blog/pay-down-my-debt/get-hospital-bill-reduced-even-eliminated1389897953/) to reduce medical debt.
 
