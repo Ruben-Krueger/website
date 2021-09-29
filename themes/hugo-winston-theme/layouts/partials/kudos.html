@@ -1,24 +1,41 @@
-<div class="kuds">
+<div class="kudos">
 <!-- hack to prevent form redirect -->
 <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
 <form name="kudos" id="kudos" target="dummyframe" method="POST" data-netlify="true">
-    <span>Did you like this post? Give kudos</span>
-    <button class="kudos-btn" type="submit">🙌</button>
+    <span><em>Give kudos</em></span>
+    <button id='kudos-btn' class="kudos-btn" type="submit" onclick="submit()">🙌</button>
     <input name="article" style="display:none" value="{{.Title}}" />
 </form>
 
 
 </div>
+<script>
+// prevent form submission on refresh / back 
+if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+ }
 
+
+function submit() {
+	console.log('yeet');
+  document.getElementById('kudos-btn').style.background = "#ced4de";
+  return false;
+}
+
+</script>
 <style>
 .kudos {
+  border: solid;
+  border-radius: 25px;
+
 }
 
 .kudos-btn {
 	background: none;
 	color: inherit;
-	border: none;
+/*	border: solid;
+      	border-radius: 25px; */
 	padding: 0;
 	font: inherit;
 	cursor: pointer;

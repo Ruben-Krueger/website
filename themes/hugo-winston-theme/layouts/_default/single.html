@@ -16,6 +16,10 @@
   	{{partial "partials/contact.html"}}
 
   {{end}}
+  {{if .Params.newsletter}}
+   {{partial "partials/email-form.html"}}
+  {{end}}
+  
 </div>
 {{ end }}
 
