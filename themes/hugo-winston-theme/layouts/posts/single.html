@@ -36,14 +36,22 @@
       {{ .Content }}
     </div>
 
+    <hr/>
+
   <div class="center">
-    <h1>More posts</h1>
+    <h2><em>More posts</em></h2>
     <ul>
       {{ $related := .Site.RegularPages.Related . | first 5 }}
         {{ with $related }}
         <ul>
           {{ range . }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          <!-- <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <img src="/{{ .Params.image }}" width="20px"/>
+          </li> -->
+          <li>
+            {{partial "small-summary.html" . }}
+          </li>
           {{ end }}
         </ul>
         {{ end }}
@@ -61,6 +69,9 @@
     </script>
 
   <style>
+    hr {
+    border-top: 1px solid gray;
+  }
     .center {
       display: block;
       margin-left: auto;
