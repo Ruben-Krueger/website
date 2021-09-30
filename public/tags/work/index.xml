@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>work on Ruben Krueger</title>
+    <link>/tags/work/</link>
+    <description>Recent content in work on Ruben Krueger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Sep 2021 11:24:00 -0700</lastBuildDate><atom:link href="/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Darkest Net</title>
+      <link>/posts/the-darkest-net/</link>
+      <pubDate>Mon, 06 Sep 2021 11:24:00 -0700</pubDate>
+      
+      <guid>/posts/the-darkest-net/</guid>
+      <description>One does not have to spend long on the internet to see vile, offensive, or otherwise malicious content. The classic example is the comments section of a political YouTube video, where interlocuters compare each other to historical tyrants. In Jamie Bartlett&amp;rsquo;s book The Dark Net, the journalist explores the Dark Net, which he defines as &amp;ldquo;internet underworlds set apart yet connected to the internet we inhabit, worlds of freedom and anonymity&amp;hellip; often uncensored unregulated and outside societys norms.</description>
+    </item>
+    
+  </channel>
+</rss>

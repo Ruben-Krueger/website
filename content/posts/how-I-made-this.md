@@ -5,6 +5,7 @@ description: 'A short explanation on how I made this website.'
 image: images/laptop-code.jpg
 draft: false
 category: article
+tags: ["tutorial", "tech"]
 ---
 
 *Image credit: James Harrison / Unsplash*

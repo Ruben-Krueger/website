@@ -26,3 +26,24 @@ paginate = 3
 [taxonomies]
   category = 'categories'
   tag = 'tags'
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "title"
+    weight = 30
+
+  [[related.indices]]
+    name = "description"
+    weight = 30
+
+  [[related.indices]]
+    name = "tags"
+    weight = 30
+
+  [[related.indices]]
+    name = "date"
+    weight = 10

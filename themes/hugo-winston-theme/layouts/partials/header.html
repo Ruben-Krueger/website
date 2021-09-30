@@ -2,50 +2,49 @@
   <a class="header-logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   <div class="menu-main">
     <ul>
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-            <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
-                <a style="color: black" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-            </li>
-        {{end}}
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent " main" . }} active{{ end }}">
+        <a style="color: black" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      </li>
+      {{end}}
     </ul>
   </div>
 
 
-<!--     hack for mobile devices -->
-<!-- TODO: Fix css -->     
- <div class="mobile-nav">
-        <ul>
-        {{ $currentPage := . }}
-          {{ range .Site.Menus.main }}
-              <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
-                  <a style="color: black" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-              </li>
-          {{end}}
-      </ul>
+  <!--     hack for mobile devices -->
+  <!-- TODO: Fix css -->
+  <div class="mobile-nav">
+    <ul>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent " main" . }} active{{ end }}">
+        <a style="color: black" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      </li>
+      {{end}}
+    </ul>
+  </div>
+  <div>
+    <!-- <a href="/search">
+      <img class="search-icon" width="50px" height="50px"
+        src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png">
+      </a> -->
+  </div>
 
-
-     </div>
 
 
   <style>
-
-
-
     @media (max-width: 499px) {
-        .mobile-nav {
-          display: inline-block;
-        }
+      .mobile-nav {
+        display: inline-block;
       }
+    }
 
     @media (min-width: 500px) {
-        .mobile-nav {
-          display: none;
-        }
+      .mobile-nav {
+        display: none;
       }
+    }
   </style>
 
 </div>
-
-
-

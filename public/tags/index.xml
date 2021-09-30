@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Ruben Krueger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Sep 2021 18:35:53 -0700</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Sep 2021 17:05:12 -0700</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>healthcare</title>
+      <link>/tags/healthcare/</link>
+      <pubDate>Mon, 27 Sep 2021 17:05:12 -0700</pubDate>
+      
+      <guid>/tags/healthcare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>policy</title>
+      <link>/tags/policy/</link>
+      <pubDate>Mon, 27 Sep 2021 17:05:12 -0700</pubDate>
+      
+      <guid>/tags/policy/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>computer science</title>
       <link>/tags/computer-science/</link>
@@ -22,6 +40,60 @@
       <pubDate>Mon, 13 Sep 2021 18:35:53 -0700</pubDate>
       
       <guid>/tags/remote-work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>productivity</title>
+      <link>/tags/productivity/</link>
+      <pubDate>Mon, 06 Sep 2021 11:24:00 -0700</pubDate>
+      
+      <guid>/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>remote</title>
+      <link>/tags/remote/</link>
+      <pubDate>Mon, 06 Sep 2021 11:24:00 -0700</pubDate>
+      
+      <guid>/tags/remote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>work</title>
+      <link>/tags/work/</link>
+      <pubDate>Mon, 06 Sep 2021 11:24:00 -0700</pubDate>
+      
+      <guid>/tags/work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>/tags/tech/</link>
+      <pubDate>Thu, 02 Sep 2021 07:00:04 -0700</pubDate>
+      
+      <guid>/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>/tags/tutorial/</link>
+      <pubDate>Thu, 02 Sep 2021 07:00:04 -0700</pubDate>
+      
+      <guid>/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COVID-19</title>
+      <link>/tags/covid-19/</link>
+      <pubDate>Mon, 30 Aug 2021 08:40:33 -0700</pubDate>
+      
+      <guid>/tags/covid-19/</guid>
       <description></description>
     </item>
     
