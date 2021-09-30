@@ -9,6 +9,7 @@ Pithy observations and questions that I've been pondering. Some of these may be 
 
 ____
 
+*Airplanes are too loud and there isn't enough leg room.*
 
 *How do we reduce the bifurication of our economy into high-paid knowledge workers and low-paid service workers?*
 
