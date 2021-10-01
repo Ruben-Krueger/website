@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>A Simple Guide to Webscraping With Python - Ruben Krueger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.6e80aaa638b281a589fe1a55ba71773fe4b6396d42b47a213f43335c27cfbb6f.css">
+  
+
+  
+    <meta name="description" content="Have you ever wanted to feel like a hacker, without breaking the law?"/>
+    <meta property="og:title" content="A Simple Guide to Webscraping With Python | Ruben Krueger"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/a-simple-guide-to-webscraping-with-python/"/>
+        
+ <meta property="og:image" content="https://www.rubenkrueger.com/images/python-webscraping.png"/>
+    <meta property="og:description" content="Have you ever wanted to feel like a hacker, without breaking the law?"/>
+  <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A Simple Guide to Webscraping With Python | Ruben Krueger"/>
+    <meta name="twitter:site" content="@rubenkrueger_"/>
+    <meta name="twitter:creator" content="@rubenkrueger_"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header header-fix'>
+  <a class="header-logo" href="/">Ruben Krueger</a>
+  <div class="menu-main">
+    <ul>
+      
+      
+      <li class="menu-item-blog">
+        <a style="color: black" href="/posts/">Blog</a>
+      </li>
+      
+      <li class="menu-item-contact">
+        <a style="color: black" href="/pages/contact/">Contact</a>
+      </li>
+      
+      <li class="menu-item-projects">
+        <a style="color: black" href="/pages/projects/">Projects</a>
+      </li>
+      
+      <li class="menu-item-thoughts">
+        <a style="color: black" href="/pages/thoughts/">Thoughts</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+
+  
+  
+  <div class="mobile-nav">
+    <ul>
+      
+      
+      <li class="menu-item-blog">
+        <a style="color: black" href="/posts/">Blog</a>
+      </li>
+      
+      <li class="menu-item-contact">
+        <a style="color: black" href="/pages/contact/">Contact</a>
+      </li>
+      
+      <li class="menu-item-projects">
+        <a style="color: black" href="/pages/projects/">Projects</a>
+      </li>
+      
+      <li class="menu-item-thoughts">
+        <a style="color: black" href="/pages/thoughts/">Thoughts</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+
+
+ 
+
+</div> 
+<style>
+  .search-icon {
+      position: absolute;
+      right: 10px;
+    }
+
+    @media (max-width: 499px) {
+      .mobile-nav {
+        display: inline-block;
+      }
+    }
+
+    @media (min-width: 500px) {
+      .mobile-nav {
+        display: none;
+      }
+    }
+</style>
+    
+
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+<div class="blog">
+  
+  <div class="author">
+  <img width="30" class="author-image" src="/images/profile.jpg" />
+  <span class="author-name">Ruben Krueger</span>
+  <span class="author-divider"></span>
+  <span class="author-date">September 30, 2021</span>
+</div>
+  
+  <div class="intro">
+    <h1 style="">A Simple Guide to Webscraping With Python<span class="dot">.</span></h1>
+
+    
+    <div>
+      <img style="max-width:75%; border-radius: 25px" src="/images/python-webscraping.png" class="center" />
+
+    </div>
+    
+  </div>
+
+  
+  <em>
+    <p style="text-align: center">Photocredit to me and my amazing Canva skills.</p>
+  </em>
+  
+  <div>
+    
+<html>
+<head>
+<style>
+     
+
+    .share-btns { 
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      display: flex;
+      align-items:center;
+      justify-content: center;
+    }
+
+    .share-btn {
+      display: inline-block;
+      color: #ffffff;
+      border: none;
+      border-radius: 25px;
+      padding: 0.1em 0.6em;
+      outline: none;
+      text-align: center;
+      font-size: 0.9em;
+      margin: 0 0.2em;
+    }
+
+    .share-btn:focus,
+    .share-btn:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    .share-btn:active {
+      color: #e2e2e2;
+    }
+
+    .share-btn.twitter { background: #55acee; }
+    .share-btn.google-plus { background: #dd4b39; }
+    .share-btn.facebook { background: #3B5998; }
+    .share-btn.stumbleupon { background: #EB4823; }
+    .share-btn.reddit { background: #ff5700; }
+    .share-btn.hackernews { background: #ff6600; }
+    .share-btn.linkedin    { background: #4875B4; }
+    .share-btn.email { background: #444444; }
+</style>
+</head>
+<body>
+
+
+    <div class="share-btns">
+      <img src="https://img.icons8.com/material-outlined/24/000000/share.png"/>
+	<a
+        class="share-btn"
+        href="https://twitter.com/share?url=www.rubenkrueger.com%2fposts%2fa-simple-guide-to-webscraping-with-python%2f&text=A%20Simple%20Guide%20to%20Webscraping%20With%20Python&via=rubenkrueger_"
+        target="_blank"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#55acee" d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+
+      <a
+        class="share-btn"
+        href="https://www.facebook.com/sharer/sharer.php?u=www.rubenkrueger.com%2fposts%2fa-simple-guide-to-webscraping-with-python%2f"
+        target="_blank"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#3B5998" d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></a>
+
+
+      <a
+        class="share-btn"
+        href="https://www.linkedin.com/shareArticle?url=www.rubenkrueger.com%2fposts%2fa-simple-guide-to-webscraping-with-python%2f&title=A%20Simple%20Guide%20to%20Webscraping%20With%20Python"
+        target="_blank"
+      >
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#4875B4" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+
+	</a>
+
+      <a
+        class="share-btn "
+        href="mailto:?subject=A%20Simple%20Guide%20to%20Webscraping%20With%20Python&body=www.rubenkrueger.com%2fposts%2fa-simple-guide-to-webscraping-with-python%2f"
+        target="_blank"
+      >
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#444444" d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+    </a>
+    </div>
+</body>
+</html>
+
+  </div>
+
+    <div class="content">
+      <p>Webscraping is the process of pulling data from websites, typically using a script. Webscraping is a wonderful thing: like many other automations, you can save hours (or more) of work. I&rsquo;ve found this skill to be incredible useful, as I&rsquo;ve applied it to many different projects. In this tutorial, I&rsquo;ll show you how to write a Python script that creates a CSV file of data from a fake online bookstore. This tutorial assumes that you understand the basics of Python (e.g., loops, functions, variables) and know a little about websites (i.e., HTML). If you do not, please go to this for a <a href="https://www.youtube.com/watch?v=zLRifWZihag&amp;ab_channel=Kewin">Python tutorial</a> and here for <a href="https://www.youtube.com/watch?v=bWPMSSsVdPk&amp;ab_channel=JakeWright">HTML</a> help before continuing.</p>
+<p><strong>Legal disclaimer: while webscraping is usually legal, please follow all applicable laws and be a good citizen of the internet.</strong></p>
+<h2 id="what-were-building">What we&rsquo;re building</h2>
+<p>Some websites forbid webscraping or otherwise are difficult to scrape. Because of this, we will scrape <a href="https://books.toscrape.com/">www.books.toscrape.com</a>, as this site was set up for this purpose. The website is a mock online book store, with a list of books that includes prices, ratings, and inventory. Go to the site and play around with it.</p>
+<p><img src="/images/books-scrapedotcom.png" alt="Books to scrape website"></p>
+<p>By the end, we will have a file <code>books.csv</code> containing the price, title, rating, and inventory status of the first 50 books on the site. Let&rsquo;s get rolling!</p>
+<h2 id="step-1-getting-started">Step 1. Getting Started</h2>
+<p>Create a directory (e.g, &lsquo;scraping&rsquo;) and navigate into it.</p>
+<p>We&rsquo;ll be using Python 3.6, because it&rsquo;s my favorite version. First, let&rsquo;s install <code>beautifulsoup4</code>, the standard library for parsing HTML pages. (You may need to use <code>pip3</code> or <code>apt-get</code>, depending on your OS.)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">foo@bar:~$ pip3 install beautifulsoup4
+</code></pre></div><p>Next, we will do the same for <code>requests</code>, which is how we will pull the HTML page.</p>
+<p><code>pip3 install requests</code></p>
+<p>Now, create a file named <code>scrape.py</code>. We will write our code in here. At the top of the file, put the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
+<span class="kn">import</span> <span class="nn">requests</span> 
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+</code></pre></div><p>These lines load the <code>requests</code> and <code>beautifulsoup</code> libraries, making them available to us later on. Let&rsquo;s now get the website page using the <code>requests</code> library. The get method returns the webpage (along with other info), and we can get the website content through the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span> 
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;http://books.toscrape.com/&#34;</span>
+
+<span class="n">page</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div><p>Run our script by doing <code>python3 scrape.py</code> in terminal. You should see the page&rsquo;s HTML being printed.</p>
+<p>Before we write more code, we need to understand the HTML we&rsquo;ll be parsing.</p>
+<h2 id="step-2-understand-the-structure-of-the-website">Step 2. Understand the structure of the website</h2>
+<p>Let&rsquo;s dig into the HTML of the website so we can figure out how to get the information we want. As you should know by now, websites are formed from a nested tree of tags, like <code>&lt;h1&gt;</code>. Using the <a href="https://courses.cs.washington.edu/courses/cse154/19su/resources/assets/debugging/chrome-inspector.html">chrome inspector</a>, we can see that the categories column has a class <code>sidebar</code>.</p>
+<p><img src="/images/website-books-categories.png" alt="fd"></p>
+<p>Likewise, we see that the book info we need is in a <code>&lt;article&gt;</code> tag with class <code>product_pod.</code></p>
+<p><img src="/images/books-row-article.png" alt="fd"></p>
+<p>Let&rsquo;s take a closer look at one of these book elements.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">article</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;product_pod&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;image_container&#34;</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;catalogue/soumission_998/index.html&#34;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;media/cache/3e/ef/3eef99c9d9adef34639f510662022830.jpg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Soumission&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;thumbnail&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;star-rating One&#34;</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-star&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-star&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-star&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-star&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-star&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;catalogue/soumission_998/index.html&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Soumission&#34;</span><span class="p">&gt;</span>Soumission<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;product_price&#34;</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;price_color&#34;</span><span class="p">&gt;</span>£50.10<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;instock availability&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-ok&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+            In stock
+         <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-block&#34;</span> <span class="na">data-loading-text</span><span class="o">=</span><span class="s">&#34;Adding...&#34;</span><span class="p">&gt;</span>Add to basket<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+         <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</code></pre></div><p>From this, we can deduce the following:</p>
+<ul>
+<li>The title of the book can be found in the image alt tag, or in the h3 tag</li>
+<li>The rating is represented as a class name (<code>One</code>, <code>Two</code>, and so on)</li>
+<li>The price is in a p tag with the class name of <code>price_color</code></li>
+<li>The inventory status is found in a p tag with class name <code>instock availability</code></li>
+</ul>
+<p>HTML isn&rsquo;t meant to be read by users, per se. Instead, the browsers render the HTML code into text, images, and all the other components of websites. Thus, we have to carefully select the elements that have the data that we want. Thankfully, beautifulsoup makes this easy.</p>
+<h2 id="step-3-extract-the-data-from-the-html">Step 3. Extract the data from the HTML</h2>
+<p>BeautifulSoup takes a webpage and converts the HTML into a structure that is easily parsible. For example, we can get the title of the webpage through the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">soupe</span><span class="o">.</span><span class="n">title</span><span class="p">)</span> <span class="c1"># &lt;title&gt; All products | Books to Scrape - Sandbox &lt;/title&gt;</span>
+</code></pre></div><p>Now we can a list of the books. Using <code>soup.find_all()</code>, we can get all article elements with class &ldquo;product_pod&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">listing</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&#34;article&#34;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">:</span> <span class="s2">&#34;product_pod&#34;</span><span class="p">}):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">listing</span><span class="p">)</span>
+</code></pre></div><p>This should print out the raw HTML for each book element. Now let&rsquo;s get the actual data we want, starting with the rating. We can grab the first p tag with <code>listing.p</code>.  To get the second class we can do <code>listing.p['class'][1]</code> (<code>listing.p['class']</code> returns a list of classes for this p).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">listing</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&#34;article&#34;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">:</span> <span class="s2">&#34;product_pod&#34;</span><span class="p">}):</span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># &#34;One&#34;</span>
+</code></pre></div><p>We can get the image element through <code>listing.img</code> and the alt attribute through <code>img['alt']</code>, which has the book title. (Note, we could just as easily use the h3 tag.)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">listing</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&#34;article&#34;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">:</span> <span class="s2">&#34;product_pod&#34;</span><span class="p">}):</span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>  
+    <span class="n">title</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">img</span><span class="p">[</span><span class="s1">&#39;alt&#39;</span><span class="p">]</span>
+</code></pre></div><p>Remember how the price of each book has the class &ldquo;price_color&rdquo;? Using listing.find returns the price element, whereas <code>.text</code> enables us to grab just the text we want (not the HTML).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">listing</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&#34;article&#34;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">:</span> <span class="s2">&#34;product_pod&#34;</span><span class="p">}):</span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">img</span><span class="p">[</span><span class="s1">&#39;alt&#39;</span><span class="p">]</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">,</span> <span class="s2">&#34;price_color&#34;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span>
+</code></pre></div><p>For the last piece of data we want, we will say a book is in stock if we see the &ldquo;instock&rdquo; class. Note, <code>text.strip()</code> just formats the data in a way that is nice for us.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">listing</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&#34;article&#34;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">:</span> <span class="s2">&#34;product_pod&#34;</span><span class="p">}):</span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">img</span><span class="p">[</span><span class="s1">&#39;alt&#39;</span><span class="p">]</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">,</span> <span class="s2">&#34;price_color&#34;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">inStock</span> <span class="o">=</span> <span class="s2">&#34;yes&#34;</span> <span class="k">if</span> <span class="n">listing</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">,</span> <span class="s2">&#34;instock&#34;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;In stock&#39;</span> <span class="k">else</span> <span class="s2">&#34;no&#34;</span>    
+</code></pre></div><p>Finally, we need to store the data we parsed. Let&rsquo;s create a dictionary, where the keys are the book number and the values are the rating, title, price, and inStock status for that book $i$.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">listing</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&#34;article&#34;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">:</span> <span class="s2">&#34;product_pod&#34;</span><span class="p">})):</span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">img</span><span class="p">[</span><span class="s1">&#39;alt&#39;</span><span class="p">]</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">,</span> <span class="s2">&#34;price_color&#34;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">inStock</span> <span class="o">=</span> <span class="s2">&#34;yes&#34;</span> <span class="k">if</span> <span class="n">listing</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">,</span> <span class="s2">&#34;instock&#34;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;In stock&#39;</span> <span class="k">else</span> <span class="s2">&#34;no&#34;</span>    
+    <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">rating</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">inStock</span><span class="p">]</span>
+</code></pre></div><h2 id="step-4-write-the-data-to-a-csv-file">Step 4. Write the data to a CSV file</h2>
+<p>To be able to access this data later, we will output the data into a CSV file. Python has support for CSV functionalities in the <code>csv</code> module, so import it at the top of the file. I&rsquo;m going to show you the code first and then explain it line-by-line:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;w+&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> 
+    <span class="n">w</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="n">w</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="s2">&#34;rating&#34;</span><span class="p">,</span> <span class="s2">&#34;title&#34;</span><span class="p">,</span> <span class="s2">&#34;price&#34;</span><span class="p">,</span> <span class="s2">&#34;inStock&#34;</span><span class="p">])</span>
+    <span class="n">w</span><span class="o">.</span><span class="n">writerows</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</code></pre></div><p>The first line creates an empty file <code>data.csv</code> and makes it available to us in the variable <code>f</code>. We then create a <code>writer</code> object, a handy way to write to a csv file. We then write the header of the file using <code>w.writerow()</code>. Lastly, we write all of the rating, price, title, and inventory status using <code>writerows()</code>.</p>
+<h2 id="step-5-run-our-script">Step 5. Run our script</h2>
+<p>With our code written, we can now run it and extract the book data from the website. To run our script, use the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">python3 scrape.py
+</code></pre></div><p>Once done, you should have a file that looks like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">rating,title,price,inStock
+Three,A Light in the Attic,£51.77,yes
+One,Tipping the Velvet,£53.74,yes
+One,Soumission,£50.10,yes
+Four,Sharp Objects,£47.82,yes
+Five,Sapiens: A Brief History of Humankind,£54.23,yes
+One,The Requiem Red,£22.65,yes
+Four,The Dirty Little Secrets of Getting Your Dream Job,£33.34,yes
+Three,The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull,£17.93,yes
+Four,The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics,£22.60,yes
+One,The Black Maria,£52.15,yes
+Two,&#34;Starving Hearts (Triangular Trade Trilogy, #1)&#34;,£13.99,yes
+Four,Shakespeare&#39;s Sonnets,£20.66,yes
+Five,Set Me Free,£17.46,yes
+Five,Scott Pilgrim&#39;s Precious Little Life (Scott Pilgrim #1),£52.29,yes
+Five,Rip it Up and Start Again,£35.02,yes
+Three,&#34;Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991&#34;,£57.25,yes
+One,Olio,£23.88,yes
+One,Mesaerion: The Best Science Fiction Stories 1800-1849,£37.59,yes
+Two,Libertarianism for Beginners,£51.33,yes
+Two,It&#39;s Only the Himalayas,£45.17,yes
+
+</code></pre></div><p>Here is our final code (a masterpiece, if I do say so myself):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
+<span class="kn">import</span> <span class="nn">requests</span> 
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;http://books.toscrape.com/&#34;</span>
+
+<span class="n">page</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">listing</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&#34;article&#34;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">:</span> <span class="s2">&#34;product_pod&#34;</span><span class="p">})):</span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">img</span><span class="p">[</span><span class="s1">&#39;alt&#39;</span><span class="p">]</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">,</span> <span class="s2">&#34;price_color&#34;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">inStock</span> <span class="o">=</span> <span class="s2">&#34;yes&#34;</span> <span class="k">if</span> <span class="n">listing</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;class&#34;</span><span class="p">,</span> <span class="s2">&#34;instock&#34;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;In stock&#39;</span> <span class="k">else</span> <span class="s2">&#34;no&#34;</span>    
+    <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">rating</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">inStock</span><span class="p">]</span>
+
+    
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;w+&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> 
+    <span class="n">w</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="n">w</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="s2">&#34;rating&#34;</span><span class="p">,</span> <span class="s2">&#34;title&#34;</span><span class="p">,</span> <span class="s2">&#34;price&#34;</span><span class="p">,</span> <span class="s2">&#34;inStock&#34;</span><span class="p">])</span>
+    <span class="n">w</span><span class="o">.</span><span class="n">writerows</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>Congrats! No matter whether or not you understood everything that was going on, you have sucessfully written your first webscraping program. Scraping is a powerful tool, and it&rsquo;s often the first step in other work pipelines, like collecting data for machine learning.</p>
+<p>While we accomplished a lot, we can do better. Currently, we are only scraping the homepage of the website, which is the first 50 books. Can you get the other 950 books? <em>(Hint: notice how the second page of the book catalogue has the url <a href="http://books.toscrape.com/catalogue/page-2.html,">http://books.toscrape.com/catalogue/page-2.html,</a> the third page is <a href="http://books.toscrape.com/catalogue/page-3.html,">http://books.toscrape.com/catalogue/page-3.html,</a> and so on. Can you scrape multiple pages with our code?)</em></p>
+
+    </div>
+
+    <hr/>
+
+  <div class="center">
+    <h2><em>Related</em></h2>
+    <ul>
+      
+        
+        <ul>
+          
+          
+          <li>
+            <div class="">
+   
+
+    <div class="row">
+      <div class="column">
+        <img  src="/images/laptop-code.jpg" class="summary-image"/>
+      </div>
+      <div> 
+        <p style="margin-bottom: -15px;"> <a href="/posts/how-i-made-this/">How I Made This</a></p>
+        <p>A short explanation on how I made this website.</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <style>
+  
+    .summary-image {
+     border-radius: 5px;
+      width: 50px;
+      height: 50px;
+      object-fit: cover !important
+    }
+  
+    .column {
+  
+    float: left;
+     
+    padding: 5px; 
+    margin: 5px
+  }
+  
+  
+   
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+
+  
+  </style>
+  
+          </li>
+          
+        </ul>
+        
+    </ul>
+
+
+    
+  </div>
+
+  <div>
+    
+  </div>
+  
+  <h2><em>Comments</em></h2>
+
+  <script src="https://utteranc.es/client.js" repo="Ruben-Krueger/website" issue-term="pathname" theme="github-light"
+    crossorigin="anonymous" async>
+    </script>
+
+  <style>
+    hr {
+    border-top: 1px solid gray;
+  }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+       
+    }
+
+    .float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+  }  
+  </style>
+</div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/rubenkrueger_" title="twitter" target="_blank" rel="noopener">
+          <img src="/images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/Ruben-Krueger" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/ruben-krueger" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-instagram">
+        <a href="https://www.instagram.com/rubenkrueger" title="instagram" target="_blank" rel="noopener">
+          <img src="/images/social/instagram.svg" width="24" height="24" alt="instagram"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

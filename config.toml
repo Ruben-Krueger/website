@@ -47,3 +47,8 @@ paginate = 3
   [[related.indices]]
     name = "date"
     weight = 10
+
+
+[ markup.goldmark ]
+[ markup.goldmark.extensions]
+    table = true

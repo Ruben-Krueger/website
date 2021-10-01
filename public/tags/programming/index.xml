@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tutorial on Ruben Krueger</title>
-    <link>/tags/tutorial/</link>
-    <description>Recent content in tutorial on Ruben Krueger</description>
+    <title>programming on Ruben Krueger</title>
+    <link>/tags/programming/</link>
+    <description>Recent content in programming on Ruben Krueger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Sep 2021 14:09:35 -0500</lastBuildDate><atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Sep 2021 14:09:35 -0500</lastBuildDate><atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Simple Guide to Webscraping With Python</title>
       <link>/posts/a-simple-guide-to-webscraping-with-python/</link>
@@ -14,17 +14,6 @@
       
       <guid>/posts/a-simple-guide-to-webscraping-with-python/</guid>
       <description>Webscraping is the process of pulling data from websites, typically using a script. Webscraping is a wonderful thing: like many other automations, you can save hours (or more) of work. I&amp;rsquo;ve found this skill to be incredible useful, as I&amp;rsquo;ve applied it to many different projects. In this tutorial, I&amp;rsquo;ll show you how to write a Python script that creates a CSV file of data from a fake online bookstore. This tutorial assumes that you understand the basics of Python (e.</description>
-    </item>
-    
-    <item>
-      <title>How I Made This</title>
-      <link>/posts/how-i-made-this/</link>
-      <pubDate>Thu, 02 Sep 2021 07:00:04 -0700</pubDate>
-      
-      <guid>/posts/how-i-made-this/</guid>
-      <description>Image credit: James Harrison / Unsplash
-There are no shortage of front-end frameworks, no-code website builders, and website templates available. Each has their strengths and weaknesses, and I&amp;rsquo;ve used almost all of them: Wix, Squarespace, React, Vue, Bootstrap, to name a few. On my previous personal websites, I would use a template like this and customize it.
-However, this approach does not lend itself to making a blog, where content needs to be served dynamically.</description>
     </item>
     
   </channel>

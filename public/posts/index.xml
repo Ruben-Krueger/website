@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>A Simple Guide to Webscraping With Python</title>
+      <link>/posts/a-simple-guide-to-webscraping-with-python/</link>
+      <pubDate>Thu, 30 Sep 2021 14:09:35 -0500</pubDate>
+      
+      <guid>/posts/a-simple-guide-to-webscraping-with-python/</guid>
+      <description>Webscraping is the process of pulling data from websites, typically using a script. Webscraping is a wonderful thing: like many other automations, you can save hours (or more) of work. I&amp;rsquo;ve found this skill to be incredible useful, as I&amp;rsquo;ve applied it to many different projects. In this tutorial, I&amp;rsquo;ll show you how to write a Python script that creates a CSV file of data from a fake online bookstore. This tutorial assumes that you understand the basics of Python (e.</description>
+    </item>
+    
+    <item>
       <title>An Uncomfortable Truth</title>
       <link>/posts/an-uncomfortable-truth/</link>
       <pubDate>Mon, 27 Sep 2021 17:05:12 -0700</pubDate>
