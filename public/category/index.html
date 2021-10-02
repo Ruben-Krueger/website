@@ -13,7 +13,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/style.min.6e80aaa638b281a589fe1a55ba71773fe4b6396d42b47a213f43335c27cfbb6f.css">
+  <link rel="stylesheet" href="/css/style.min.245a83d6ecd944af0e37ab426a818d87cb443f3915614a09f8b0e9ffddf12877.css">
   
 
   
@@ -123,9 +123,10 @@
   <div>
     
   </div>
-  <div>
-    
-      <div class="summary">
+  <div class="row" style="display:flex">
+    <div class="column" style="flex: 90%">
+      
+        <div class="summary">
    
     <div class="author">
   <img width="30" class="author-image" src="/images/profile.jpg" />
@@ -141,7 +142,7 @@
       <img src="/" class="summary-image"/>
     </div>
     <div> 
-      <h2 class="summary-title"><a href="/category/tutorial/">tutorial</a></h2>
+      <h2 class="summary-title"><a href="/category/tutorial/" style="font-size: 26px; line-height: 24px; margin: 0px">tutorial</a></h2>
        
       <p class="summary-description"></p>    
     </div>
@@ -183,8 +184,8 @@
 
 </style>
 
-    
-      <div class="summary">
+      
+        <div class="summary">
    
     <div class="author">
   <img width="30" class="author-image" src="/images/profile.jpg" />
@@ -200,7 +201,7 @@
       <img src="/" class="summary-image"/>
     </div>
     <div> 
-      <h2 class="summary-title"><a href="/category/opinion/">opinion</a></h2>
+      <h2 class="summary-title"><a href="/category/opinion/" style="font-size: 26px; line-height: 24px; margin: 0px">opinion</a></h2>
        
       <p class="summary-description"></p>    
     </div>
@@ -242,8 +243,67 @@
 
 </style>
 
-    
-      <div class="summary">
+      
+        <div class="summary">
+   
+    <div class="author">
+  <img width="30" class="author-image" src="/images/profile.jpg" />
+  <span class="author-name">Ruben Krueger</span>
+  <span class="author-divider"></span>
+  <span class="author-date">September 22, 2021</span>
+</div> 
+  
+
+
+  <div class="row">
+    <div class="column">
+      <img src="/" class="summary-image"/>
+    </div>
+    <div> 
+      <h2 class="summary-title"><a href="/category/personal/" style="font-size: 26px; line-height: 24px; margin: 0px">personal</a></h2>
+       
+      <p class="summary-description"></p>    
+    </div>
+  </div>
+</div>
+
+
+<style>
+
+  .summary-image {
+ border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover !important
+  }
+
+  .column {
+
+  float: left;
+   
+  padding: 5px; 
+  margin: 10px
+}
+
+ 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.tag {
+  margin-top: -15px;
+  margin-bottom: -15px;
+  margin-left: 15px;
+}
+
+
+
+</style>
+
+      
+        <div class="summary">
    
     <div class="author">
   <img width="30" class="author-image" src="/images/profile.jpg" />
@@ -259,7 +319,7 @@
       <img src="/" class="summary-image"/>
     </div>
     <div> 
-      <h2 class="summary-title"><a href="/category/other/">other</a></h2>
+      <h2 class="summary-title"><a href="/category/other/" style="font-size: 26px; line-height: 24px; margin: 0px">other</a></h2>
        
       <p class="summary-description"></p>    
     </div>
@@ -301,10 +361,40 @@
 
 </style>
 
-    
-  </div>
-  <div>
-    
+      
+    </div>
+    <div class="article-category" style="flex: 10%">
+      <h2>Categories</h2> 
+
+      <div>
+        <ul>
+            
+            <li> <a href="/category/opinion">opinion</a> </li>
+
+            
+            <li> <a href="/category/other">other</a> </li>
+
+            
+            <li> <a href="/category/personal">personal</a> </li>
+
+            
+            <li> <a href="/category/tutorial">tutorial</a> </li>
+
+            
+        </ul>
+      </div>
+
+    </div>
+
+    <style>
+      @media only screen and (max-width: 992px) {
+            .article-category {
+                display: none;
+            }
+        }
+    </style>
+   
+  
   </div>
 
     <div class="footer">

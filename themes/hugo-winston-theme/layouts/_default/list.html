@@ -8,12 +8,35 @@
   <div>
     {{ .Content }}
   </div>
-  <div>
-    {{ range.Pages }}
-      {{ .Render "summary" }}
-    {{ end }}
-  </div>
-  <div>
-    
+  <div class="row" style="display:flex">
+    <div class="column" style="flex: 90%">
+      {{ range.Pages }}
+        {{ .Render "summary" }}
+      {{ end }}
+    </div>
+    <div class="article-category" style="flex: 10%">
+      <h2>Categories</h2> 
+
+      <div>
+        <ul>
+            {{ range $key, $taxonomy := .Site.Taxonomies.category }}
+            <li> <a href="{{ "/category" | relLangURL}}/{{ $key | urlize }}">{{ $key }}</a> </li>
+
+            {{ end }}
+        </ul>
+      </div>
+
+    </div>
+
+    <style>
+      @media only screen and (max-width: 992px) {
+            .article-category {
+                display: none;
+            }
+        }
+    </style>
+   
+  
   </div>
 {{ end }}
+
