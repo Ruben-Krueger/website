@@ -6,6 +6,7 @@ caption: 'Photo credit to me and my Canva skills'
 draft: false
 description: 'Do not stop taking your medication without talking to your doctor. You may end up feeling electricity course through your cranium without your consent.'
 tags: ["healthcare", "policy"]
+category: opinion
 ---
 
 **If you or a loved one is having thoughts of self-harm, there is help. You can call the National Suicide Prevention Lifeline at 800-273-8255**

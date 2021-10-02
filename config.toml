@@ -24,7 +24,7 @@ paginate = 3
   addDot = true
 
 [taxonomies]
-  category = 'categories'
+  category = 'category'
   tag = 'tags'
 
 [related]
@@ -47,7 +47,6 @@ paginate = 3
   [[related.indices]]
     name = "date"
     weight = 10
-
 
 [ markup.goldmark ]
 [ markup.goldmark.extensions]

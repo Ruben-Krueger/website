@@ -6,6 +6,7 @@ image: images/python-webscraping.png
 caption: 'Photocredit to me and my amazing Canva skills.'
 draft: false
 tags: [tutorial, programming, web, python]
+category: tutorial
 ---
 
 

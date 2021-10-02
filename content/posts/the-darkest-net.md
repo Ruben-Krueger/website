@@ -4,7 +4,7 @@ date: 2021-09-06T11:24:00-07:00
 description: "The worst parts of the internet are not obscure websites on the Dark Web, but plainly visible for us all."
 image: images/darkest-net.png
 draft: false
-category: article
+category: opinion
 tags: ["work", "remote", "productivity"]
 ---
 

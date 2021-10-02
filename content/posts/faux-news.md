@@ -7,6 +7,7 @@ draft: false
 category: article
 caption: 'Photo credit Mulyadi / Unsplash'
 tags: ["healthcare", "COVID-19"]
+category: opinion
 ---
 
   

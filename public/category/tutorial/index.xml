@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>web on Ruben Krueger</title>
-    <link>/tags/web/</link>
-    <description>Recent content in web on Ruben Krueger</description>
+    <title>tutorial on Ruben Krueger</title>
+    <link>/category/tutorial/</link>
+    <description>Recent content in tutorial on Ruben Krueger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Sep 2021 14:09:35 -0500</lastBuildDate><atom:link href="/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Sep 2021 14:09:35 -0500</lastBuildDate><atom:link href="/category/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Simple Guide to Webscraping With Python</title>
       <link>/posts/a-simple-guide-to-webscraping-with-python/</link>

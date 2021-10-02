@@ -6,6 +6,7 @@ image: images/drugs-pills-spilled.jpg
 caption: 'Photo credit to Christina Victoria Craft / Unsplash'
 tags: ["healthcare", "policy"]
 draft: false
+category: opinion
 ---
 
 

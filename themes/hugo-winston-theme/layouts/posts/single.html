@@ -39,23 +39,34 @@
     <hr/>
 
   <div class="center">
-    <h2><em>Related</em></h2>
+    <h2><em>Recommended</em></h2>
+
+    
     <ul>
-      {{ $related := .Site.RegularPages.Related . | first 5 }}
-        {{ with $related }}
-        <ul>
-          {{ range . }}
-          <!-- <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <img src="/{{ .Params.image }}" width="20px"/>
-          </li> -->
-          <li>
-            {{partial "small-summary.html" . }}
-          </li>
+      <!-- {{ $related := first 5 (where .Site.Pages "Section" "posts")}} -->
+
+      <ul>
+        {{ $related := .Site.RegularPages.Related . | first 5 }}
+          {{ with $related }}
+          <ul>
+            {{ range . }}
+          
+            <li>
+              {{partial "small-summary.html" . }}
+            </li>
+            {{ end }}
+          </ul>
           {{ end }}
-        </ul>
-        {{ end }}
-    </ul>
+
+          {{if lt (len $related) 1}}
+              {{$posts := (where .Site.Pages "Section" "posts") | first 3 }}
+              {{ range $posts}}
+                {{partial "small-summary.html" . }}
+              {{ end }}
+
+          {{end}}
+
+      </ul>
 
 
     <!--	{{partial "partials/kudos.html" . }} -->
