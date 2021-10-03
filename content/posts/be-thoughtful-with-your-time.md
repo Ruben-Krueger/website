@@ -21,7 +21,7 @@ This may not seem profound, nor I am the best example of such a philosophy. More
 
 If you are thoughtful with your time, answering the most important questions in life will be possible. If you are not, good luck; I hope you will have more time than me. 
 
-While I loathe the bromidian practice of quoting dead men who never ventured more than a few hundred miles from Greece, I feel obligated to disgorge an exercept from Seneca:
+While I loathe the bromidian practice of quoting dead men who never ventured more than a few hundred miles from Greece, I feel obligated to disgorge an excerpt from Seneca:
 
 > This is our big mistake, to think we look forward to death. Most of death is already gone. Whatever time has passed is owned by death.
 
