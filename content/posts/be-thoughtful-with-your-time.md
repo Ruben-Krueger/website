@@ -1,5 +1,5 @@
 ---
-title: "Be Careful With Your Time"
+title: "Be Thoughtful With Your Time"
 date: 2021-10-02T22:15:36-05:00
 description: 'Death owns the clock, but you can control the time.'
 image: images/be-careful-time-clock-reaper.png
@@ -8,7 +8,6 @@ draft: false
 tags: [life, philosophy, death]
 category: opinion
 ---
-# Be thoughtful with your time
 
 For someone who is far (probably) from the end of the road of life, I contemplate my  mortality often. Everyday I am reminded  that everything I have done, everyone I have loved, and every memory I cherish will disappear with the decay of my neurons. 
 
@@ -20,7 +19,7 @@ This may not seem profound, nor I am the best example of such a philosophy. More
 > things that really matter — in work, at home, and in your soul — and
 > not wasting too much attention on things that don’t.
 
-If you are thoughtful with your time, answering the most important questions in life will be possible. If you are not, good luck; I hope you have more time than me. 
+If you are thoughtful with your time, answering the most important questions in life will be possible. If you are not, good luck; I hope you will have more time than me. 
 
 While I loathe the bromidian practice of quoting dead men who never ventured more than a few hundred miles from Greece, I feel obligated to disgorge an exercept from Seneca:
 

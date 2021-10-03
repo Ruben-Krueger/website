@@ -13,7 +13,7 @@
   {{ partial "author.html" . }}
   {{ end }}
   <div class="intro">
-    <h1 style="">{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+    <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
 
     {{ if .Params.image }}
     <div>
@@ -46,7 +46,7 @@
       <!-- {{ $related := first 5 (where .Site.Pages "Section" "posts")}} -->
 
       <ul>
-        {{ $related := .Site.RegularPages.Related . | first 5 }}
+        {{ $related := .Site.RegularPages.Related . | first 3}}
           {{ with $related }}
           <ul>
             {{ range . }}

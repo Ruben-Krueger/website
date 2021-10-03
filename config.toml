@@ -48,6 +48,10 @@ paginate = 3
     name = "date"
     weight = 10
 
+  [[related.indices]]
+      name = "category"
+      weight = 100
+
 [ markup.goldmark ]
 [ markup.goldmark.extensions]
     table = true
