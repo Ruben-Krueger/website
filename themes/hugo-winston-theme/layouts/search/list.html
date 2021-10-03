@@ -1,7 +1,11 @@
 {{ define "main" }}
 
+<div class="content">
+  {{.Content}}
+</div>
 
-<form action="/blog/search" method="get">
+
+<form action="/search" method="get">
     <div class="button-input">
       <label for="i-query">Search</label>
       <input id="i-query" name="query" type="text" autofocus="autofocus" value="">
