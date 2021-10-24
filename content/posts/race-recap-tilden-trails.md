@@ -5,7 +5,7 @@ description: 'Just a little Saturday morning jog, I told myself.'
 image: images/tilden-selfie.jpeg
 caption: 'A quick selfie I took during the race.'
 draft: false
-tags: [running, races, half marathon]
+tags: [running, half marathon]
 category: races
 ---
 
