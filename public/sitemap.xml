@@ -23,21 +23,6 @@
     <loc>/</loc>
     <lastmod>2021-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/be-thoughtful-with-your-time/</loc>
-    <lastmod>2021-10-02T22:15:36-05:00</lastmod>
-  </url><url>
-    <loc>/tags/death/</loc>
-    <lastmod>2021-10-02T22:15:36-05:00</lastmod>
-  </url><url>
-    <loc>/tags/life/</loc>
-    <lastmod>2021-10-02T22:15:36-05:00</lastmod>
-  </url><url>
-    <loc>/category/opinion/</loc>
-    <lastmod>2021-10-02T22:15:36-05:00</lastmod>
-  </url><url>
-    <loc>/tags/philosophy/</loc>
-    <lastmod>2021-10-02T22:15:36-05:00</lastmod>
-  </url><url>
     <loc>/posts/a-simple-guide-to-webscraping-with-python/</loc>
     <lastmod>2021-09-30T14:09:35-05:00</lastmod>
   </url><url>
@@ -62,14 +47,11 @@
     <loc>/tags/healthcare/</loc>
     <lastmod>2021-09-27T17:05:12-07:00</lastmod>
   </url><url>
-    <loc>/tags/policy/</loc>
+    <loc>/category/opinion/</loc>
     <lastmod>2021-09-27T17:05:12-07:00</lastmod>
   </url><url>
-    <loc>/posts/an-unfortunate-experiment/</loc>
-    <lastmod>2021-09-22T17:23:42-07:00</lastmod>
-  </url><url>
-    <loc>/category/personal/</loc>
-    <lastmod>2021-09-22T17:23:42-07:00</lastmod>
+    <loc>/tags/policy/</loc>
+    <lastmod>2021-09-27T17:05:12-07:00</lastmod>
   </url><url>
     <loc>/tags/computer-science/</loc>
     <lastmod>2021-09-13T18:35:53-07:00</lastmod>
