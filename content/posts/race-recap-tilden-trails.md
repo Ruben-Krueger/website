@@ -4,7 +4,7 @@ date: 2021-10-24
 description: 'Just a little Saturday morning jog, I told myself.'
 image: images/tilden-selfie.jpeg
 caption: 'A quick selfie I took during the race.'
-draft: false
+draft: true
 tags: [running, half marathon]
 category: races
 ---

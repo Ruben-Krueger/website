@@ -6,13 +6,13 @@
     <description>Recent content in Category on Ruben Krueger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/category/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/category/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>races</title>
-      <link>/category/races/</link>
-      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      <title>opinion</title>
+      <link>/category/opinion/</link>
+      <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/category/races/</guid>
+      <guid>/category/opinion/</guid>
       <description></description>
     </item>
     
@@ -22,15 +22,6 @@
       <pubDate>Thu, 30 Sep 2021 14:09:35 -0500</pubDate>
       
       <guid>/category/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opinion</title>
-      <link>/category/opinion/</link>
-      <pubDate>Mon, 27 Sep 2021 17:05:12 -0700</pubDate>
-      
-      <guid>/category/opinion/</guid>
       <description></description>
     </item>
     

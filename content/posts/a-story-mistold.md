@@ -1,7 +1,7 @@
 ---
 title: "January 6th: A Story Mistold"
-date: 2022-01-06T20:59:19-07:00
-description: 'We need to remember the right story.'
+date: 2022-01-06
+description: "We need to remember the right story."
 image: images/Jan-6th.jpeg
 caption: 'Trump supporters on the day of the insurrection. Shay Horse/Getty Images'
 draft: false
