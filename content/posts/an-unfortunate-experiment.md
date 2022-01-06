@@ -3,7 +3,7 @@ title: "An Unfortunate Experiment"
 date: 2021-09-22T17:23:42-07:00
 image: images/brain-drain-pills.png
 caption: 'Photo credit to me and my Canva skills'
-draft: false
+draft: true
 description: 'Do not stop taking your medication without talking to your doctor. You may end up feeling electricity course through your cranium without your consent.'
 tags: ["healthcare", "policy"]
 category: personal

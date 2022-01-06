@@ -4,7 +4,7 @@ date: 2021-10-02T22:15:36-05:00
 description: 'Death owns the clock, but you can control the time.'
 image: images/be-careful-time-clock-reaper.png
 caption: 'A spooky image I made for the spooky month.'
-draft: false
+draft: true
 tags: [life, philosophy, death]
 category: opinion
 ---
