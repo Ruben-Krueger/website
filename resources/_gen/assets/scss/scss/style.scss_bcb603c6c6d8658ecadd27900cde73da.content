@@ -598,8 +598,7 @@ body {
     body {
       padding: 50px; } }
   body.frame {
-    min-height: 100vh;
-    border: 18px solid var(--highlight-color); }
+    min-height: 100vh; }
 
 .wrapper {
   max-width: 1000px;
