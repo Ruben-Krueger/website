@@ -11,7 +11,7 @@ tags: writing, passions
 
 I.
 
-Writing is a terrible profession and an even worse hobby. Most people who write are underpaid, overworked, and miserable. (I, on the other hand, am overpaid, underworked, and still miserable).  But when you write for “fun,” as I do, you do not have the benefit of editors, deadlines, or a dedicated audience. (Should I have used “nor” in this preceding sentence? Who knows!)
+Writing is a terrible profession and an even worse hobby. Most writers are underpaid, overworked, and miserable. (I, on the other hand, am overpaid, underworked, and still miserable).  But when you write for “fun,” as I do, you do not have the benefit of editors, deadlines, or a dedicated audience. (Should I have used “nor” in this preceding sentence? Who knows!)
 
 I suppose I should explain why I hate writing, even though I offer it as a “passion” of mine when someone asks to describe myself. Writing is a painful process; most of the time, I bang my head against the wall, searching for words. Occasionally, I will hit my head hard enough and a few sentences will fall out; sometimes, one will be decent-enough for the final draft. Writing, though, can be cathartic and I think this the main reason I do it. In the same way that a painting allows others to see the colors that only a painter sees, writing prose allows me to express my view of the world.
 
@@ -20,7 +20,7 @@ A fear of cliches most affects my writing of short stories, but it also affects 
 
 II.
 
-I insult the writing profession even though it is my dream to write for The New Yorker. In this dream, I am a prominent member of the intelligentsia, living in the world’s cultural capital, and writing the most brilliant prose which captivates and moves my large and diverse readership. 
+I insult the writing profession even though it is my dream to write for *The New Yorker*. In this dream, I am a prominent member of the intelligentsia, living in the world’s cultural capital, and writing the most brilliant prose which captivates and moves my large and diverse readership. 
 
 Of course, I have and am none of these things. But I can still dream.
 
@@ -30,7 +30,7 @@ I have an amazing idea to save the dying journalism-literature complex: bad writ
 
 IV. 
 
-Supposedly, Faulkner wrote As I Lay Dying in six weeks while working at a power plant. I spent more than six weeks working on *this* piece. I bet Faulkner even got a promotion during that time.
+Supposedly, Faulkner wrote *As I Lay Dying* in six weeks while working at a power plant. I spent more than six weeks working on *this* piece. I bet Faulkner even got a promotion during that time.
 
 V.
 
