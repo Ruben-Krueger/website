@@ -4,7 +4,7 @@ date: 2022-08-02
 description: "Notes on a malaise which has an simple cure, yet seems out of reach."
 image: images/brain-broken.png
 caption: 'Isolation has broken something inside of me.'
-draft: false
+draft: true
 category: personal
 tags: personal
 ---
