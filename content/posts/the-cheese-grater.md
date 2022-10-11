@@ -2,7 +2,7 @@
 title: "The Cheese Grater"
 date: 2022-10-10T11:24:00-07:00
 description: "Do no harm does not apply here"
-image: images/feather-pen.png
+image: images/cheese-grater.png
 draft: false
 category: opinion
 tags: ["medicine"]
