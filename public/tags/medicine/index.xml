@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>medicine on Ruben Krueger</title>
+    <link>/tags/medicine/</link>
+    <description>Recent content in medicine on Ruben Krueger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Oct 2022 11:24:00 -0700</lastBuildDate><atom:link href="/tags/medicine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Cheese Grater</title>
+      <link>/posts/the-cheese-grater/</link>
+      <pubDate>Mon, 10 Oct 2022 11:24:00 -0700</pubDate>
+      
+      <guid>/posts/the-cheese-grater/</guid>
+      <description>The medical school application process is broken. In no way is this better exemplified than the secondary application process; or, as I like to think of it, the “cheese grater.”
+Applying to medical school is done in multiple stages. The first stage is the primary application, which consists of sending essays (e.g., “why medicine?”), transcripts, and other demographic information to your list of chosen medical schools. After some bureaucratic wrangling by the AAMC — the “non-profit” behind this mess — medical schools send the secondary application to students who have sent their primary application.</description>
+    </item>
+    
+  </channel>
+</rss>
