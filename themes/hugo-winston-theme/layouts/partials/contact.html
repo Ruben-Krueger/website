@@ -17,10 +17,9 @@
      <textarea name="message" placeholder="I'd like to chat about..."></textarea>
   </p>
 
-  <div data-netlify-recaptcha="true"></div>
-  <div class="spacing"></div>
-  <p>
+  <p class="inline">
     <button class="submit" value="Send Message" id="form_button" />Send!</button>
+    <div data-netlify-recaptcha="true"></div>
   </p>
 </form>
 
@@ -37,8 +36,8 @@
 
 <style>
 
-.spacing {
-  padding-bottom: 10;
+.inline {
+ display: "inline"
 }
 
 .hidden {
