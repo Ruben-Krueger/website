@@ -1,7 +1,12 @@
 
 <div id="container">
 
-<form name="contact" class="contact-form" method="POST" data-netlify="true" action="/pages/success">
+<form name="contact" class="contact-form" method="POST" data-netlify="true" action="/pages/success" netlify-honeypot="bot-field"   data-netlify-recaptcha="true">
+  <p class="hidden">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
   <p>
     <input type="text" placeholder="My name is.." name="name" />
   </p>
@@ -11,6 +16,8 @@
   <p>
      <textarea name="message" placeholder="I'd like to chat about..."></textarea>
   </p>
+
+  <div data-netlify-recaptcha="true"></div>
   <p>
     <button class="submit" value="Send Message" id="form_button" />Send!</button>
   </p>
@@ -28,6 +35,10 @@
 
 
 <style>
+
+.hidden {
+  display: none
+}
 
 
 button {
