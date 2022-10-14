@@ -1,5 +1,16 @@
-<div class="author author-large">
+<div class="author author-large hidden-mobile">
   <img width="50" class="author-image" src="{{ .Site.Data.author.image | relURL }}" alt="{{ .Site.Data.author.name }}" />
   <span class="author-name">{{ .Site.Data.author.name }}</span>
   <span class="author-title">{{ .Site.Data.author.title }}</span>
 </div>
+
+<style>
+
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+      display: none;
+    }
+}
+
+</style>

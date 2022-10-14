@@ -86,7 +86,10 @@
 
     @media (max-width: 499px) {
       .mobile-nav {
-        display: inline-block;
+        display: inline;
+      }
+      ul li{
+        display: inline;
       }
     }
 
@@ -99,11 +102,22 @@
     
 
   
-    <div class="author author-large">
+    <div class="author author-large hidden-mobile">
   <img width="50" class="author-image" src="/images/profile.jpg" alt="Ruben Krueger" />
   <span class="author-name">Ruben Krueger</span>
   <span class="author-title">Software Engineer, Writer, and Runner </span>
 </div>
+
+<style>
+
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+      display: none;
+    }
+}
+
+</style>
   
 
   <div class="intro">
