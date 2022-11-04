@@ -22,13 +22,13 @@ Schools have portals to submit their essays. As someone with basic design experi
 
 ![Drop-down](/images/what-is-this.png)
 
-**Money**
-Each school requires a fee to submit a secondary. These fees range from $50 (e.g., Kaiser-Permanente) to $130 (e.g., Dartmouth). I’ve submitted secondary applications for 24 schools so far; thus, my bill has reached $2500. (The primary application also costs thousands of dollars 🙃.) I can afford this because I am an over-paid software engineer. However, for many people, this is not affordable, and one of the reasons why medical school is mostly for rich kids.
+**Money:**
+Each school requires a fee to submit a secondary. These fees range from $50 (e.g., Kaiser-Permanente) to $130 (e.g., Dartmouth). Thus, this step can cost thousands of dollars, just like the primary application. I can afford this because I am an over-paid software engineer. However, for many people, this is not affordable, and one of the reasons why medical school is mostly for [rich kids](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2790107).
 
-**Time** 
+**Time:** 
 Writing one 1,500-character essay is not too bad. However, doing 20 of them is a nightmare. To prevent this pain, it is recommended to “prewrite” your secondaries by looking up past secondary essay prompts online. Often, the essays will not deviate too much each year. Unfortunately, I did not have the wisdom to follow this advice.
 
-**Ghosting**
+**Ghosting:**
 After sending the most heartfelt and intimate essays, one must wait months to hear a response. And there is no way to track the status of your application. 
 
 ## But you have to still do it
