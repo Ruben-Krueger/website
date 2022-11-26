@@ -32,7 +32,7 @@
     {{partial "partials/share.html" .}}
   </div>
 
-    <div class="content">
+    <div class="content content-list" style="max-width: 700px">
       {{ .Content }}
     </div>
 
@@ -41,21 +41,19 @@
   <div class="center">
     <h2><em>Recommended</em></h2>
 
-    
-    <ul>
-      <!-- {{ $related := first 5 (where .Site.Pages "Section" "posts")}} -->
-
-      <ul>
+    <div>
+      <div>
         {{ $related := .Site.RegularPages.Related . | first 3}}
           {{ with $related }}
-          <ul>
+          <div>
             {{ range . }}
           
-            <li>
+            <div>
               {{partial "small-summary.html" . }}
-            </li>
+  
+            </div>
             {{ end }}
-          </ul>
+          </div>
           {{ end }}
 
           {{if lt (len $related) 1}}
@@ -66,16 +64,12 @@
 
           {{end}}
 
-      </ul>
-
-
-    <!--	{{partial "partials/kudos.html" . }} -->
+        </div>
   </div>
 
   <div>
     
   </div>
-  <!-- <hr/> -->
   <h2><em>Comments</em></h2>
 
   <script src="https://utteranc.es/client.js" repo="Ruben-Krueger/website" issue-term="pathname" theme="github-light"
@@ -97,6 +91,7 @@
     float: left;
     padding: 20px;
   }  
+
   </style>
 </div>
 {{ end }}

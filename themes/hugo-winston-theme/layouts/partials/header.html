@@ -1,7 +1,7 @@
 <div class='header header-fix'>
   <a class="header-logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   <div class="menu-main">
-      <ul>
+      <ul style="list-style: none">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
           <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent " main" . }} active{{ end }}">

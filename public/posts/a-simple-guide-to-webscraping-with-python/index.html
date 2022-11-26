@@ -13,7 +13,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/style.min.3c85891fb1eb24fbc71b582b8b0f6138d075a16772e00d338ab39a75875e93cf.css">
+  <link rel="stylesheet" href="/css/style.min.66d5774a873f20d8a8aef0d184451ab55b028c1e5ef452e610be2552374ed9d2.css">
   
 
   
@@ -42,7 +42,7 @@
     <div class='header header-fix'>
   <a class="header-logo" href="/">Ruben Krueger</a>
   <div class="menu-main">
-      <ul>
+      <ul style="list-style: none">
         
         
           <li class="menu-item-blog">
@@ -208,7 +208,7 @@
 
   </div>
 
-    <div class="content">
+    <div class="content content-list" style="max-width: 700px">
       <p>Webscraping is the process of pulling data from websites, typically using a script. Webscraping is a wonderful thing: like many other automations, you can save hours (or more) of work. I&rsquo;ve found this skill to be incredible useful, as I&rsquo;ve applied it to many different projects. In this tutorial, I&rsquo;ll show you how to write a Python script that creates a CSV file of data from a fake online bookstore. This tutorial assumes that you understand the basics of Python (e.g., loops, functions, variables) and know a little about websites (i.e., HTML). If you do not, please go to this for a <a href="https://www.youtube.com/watch?v=zLRifWZihag&amp;ab_channel=Kewin">Python tutorial</a> and here for <a href="https://www.youtube.com/watch?v=bWPMSSsVdPk&amp;ab_channel=JakeWright">HTML</a> help before continuing.</p>
 <p><strong>Legal disclaimer: while webscraping is usually legal, please follow all applicable laws and be a good citizen of the internet.</strong></p>
 <h2 id="what-were-building">What we&rsquo;re building</h2>
@@ -375,17 +375,14 @@ Two,It&#39;s Only the Himalayas,£45.17,yes
   <div class="center">
     <h2><em>Recommended</em></h2>
 
-    
-    <ul>
-      
-
-      <ul>
+    <div>
+      <div>
         
           
-          <ul>
+          <div>
             
           
-            <li>
+            <div>
               <div class="">
    
 
@@ -394,7 +391,7 @@ Two,It&#39;s Only the Himalayas,£45.17,yes
         <img  src="/images/laptop-code.jpg" class="summary-image"/>
       </div>
       <div> 
-        <p style="margin-bottom: -15px;"> <a href="/posts/how-i-made-this/">How I Made This</a></p>
+        <p style="margin-bottom: -15px"> <a href="/posts/how-i-made-this/">How I Made This</a></p>
         <p>A short explanation on how I made this website.</p>
       </div>
     </div>
@@ -428,23 +425,20 @@ Two,It&#39;s Only the Himalayas,£45.17,yes
   
   </style>
   
-            </li>
+  
+            </div>
             
-          </ul>
+          </div>
           
 
           
 
-      </ul>
-
-
-    
+        </div>
   </div>
 
   <div>
     
   </div>
-  
   <h2><em>Comments</em></h2>
 
   <script src="https://utteranc.es/client.js" repo="Ruben-Krueger/website" issue-term="pathname" theme="github-light"
@@ -466,6 +460,7 @@ Two,It&#39;s Only the Himalayas,£45.17,yes
     float: left;
     padding: 20px;
   }  
+
   </style>
 </div>
 

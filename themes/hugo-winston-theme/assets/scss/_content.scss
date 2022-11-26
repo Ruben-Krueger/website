@@ -21,15 +21,15 @@ p {
   line-height: 24px;
 }
 
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  li {
-    list-style: none;
-  }
-}
+// ol,
+// ul {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   li {
+//     list-style: none;
+//   }
+// }
 
 .content {
   font-size: 18px;
@@ -71,12 +71,31 @@ ul {
     margin-top: 30px;
     margin-bottom: 20px;
   }
-  ul,
-  ol {
+  ul {
+    list-style-type: disc; 
     margin-left: 0;
     margin-top: 10px;
     margin-bottom: 20px;
     list-style: disc;
+    li {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      @include breakpoint('small') {
+        margin-left: 20px;
+      }
+    }
+    @include breakpoint('small') {
+      margin-left: 20px;
+    }
+  }
+  ol {
+    list-style-type: decimal;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style: decimal;
     li {
       font-size: 18px;
       line-height: 20px;
