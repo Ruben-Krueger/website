@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Most Important Open Problem</title>
+      <link>/posts/the-most-important-open-problem/</link>
+      <pubDate>Tue, 13 Dec 2022 18:35:53 -0700</pubDate>
+      
+      <guid>/posts/the-most-important-open-problem/</guid>
+      <description>I often get asked which open problem in science I think is the most important.1 I always respond, “does P = NP?”2
+A mathematically-inclined (and perhaps jocular) reader at this point will think “yes, when N=1”. A reader with a background in computer science (but is not, say, a theoretical computer science professor) will gaze in the foreground, trying to remember the contours of this problem from their algorithms class. A reader who is struggling to understand the footnotes will also probably not understand how the prose got to this point, along with the reader who was skimming these words (and is daydreaming by now).</description>
+    </item>
+    
+    <item>
       <title>The Worst Argument to Descend Down</title>
       <link>/posts/the-worst-argument-to-descend-down/</link>
       <pubDate>Sat, 26 Nov 2022 11:24:00 -0700</pubDate>

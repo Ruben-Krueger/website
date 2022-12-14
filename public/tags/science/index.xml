@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>science on Ruben Krueger</title>
+    <link>/tags/science/</link>
+    <description>Recent content in science on Ruben Krueger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Dec 2022 18:35:53 -0700</lastBuildDate><atom:link href="/tags/science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Most Important Open Problem</title>
+      <link>/posts/the-most-important-open-problem/</link>
+      <pubDate>Tue, 13 Dec 2022 18:35:53 -0700</pubDate>
+      
+      <guid>/posts/the-most-important-open-problem/</guid>
+      <description>I often get asked which open problem in science I think is the most important.1 I always respond, “does P = NP?”2
+A mathematically-inclined (and perhaps jocular) reader at this point will think “yes, when N=1”. A reader with a background in computer science (but is not, say, a theoretical computer science professor) will gaze in the foreground, trying to remember the contours of this problem from their algorithms class. A reader who is struggling to understand the footnotes will also probably not understand how the prose got to this point, along with the reader who was skimming these words (and is daydreaming by now).</description>
+    </item>
+    
+  </channel>
+</rss>
