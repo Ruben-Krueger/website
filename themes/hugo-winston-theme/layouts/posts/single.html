@@ -4,10 +4,6 @@
 
 {{ define "main" }}
 
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"
-  ></script>
   <div class="blog">
     {{ if .Site.Params.showAuthorOnPosts }}
       {{ partial "author.html" . }}
@@ -40,25 +36,21 @@
       {{ partial "partials/share.html" . }}
     </div>
 
-    <div class="content content-list" style="max-width: 700px">
+    <div class="content content-list center" style="max-width: 700px">
       {{ .Content }}
     </div>
 
     <hr />
-
     <div class="center">
       <h2><em>Recommended</em></h2>
-
       <div>
         <div>
           {{ $related := .Site.RegularPages.Related . | first 3 }}
           {{ with $related }}
             <div>
               {{ range . }}
-
                 <div>
                   {{ partial "small-summary.html" . }}
-
                 </div>
               {{ end }}
             </div>

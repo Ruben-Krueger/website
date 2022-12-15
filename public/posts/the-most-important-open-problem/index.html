@@ -101,10 +101,6 @@
 
     
 
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"
-  ></script>
   <div class="blog">
     
     <div class="intro">
@@ -267,13 +263,13 @@
 
     </div>
 
-    <div class="content content-list" style="max-width: 700px">
+    <div class="content content-list center" style="max-width: 700px">
       <p>I often get asked which open problem in science I think is the most important.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> I always respond, “does P = NP?”<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-<p>A mathematically-inclined (and perhaps jocular) reader at this point will think “yes, when N=1”. A reader with a background in computer science (but is not, say, a theoretical computer science professor) will gaze in the foreground, trying to remember the contours of this problem from their algorithms class. A reader who is struggling to understand the footnotes will also probably not understand how the prose got to this point, along with the reader who was skimming these words (and is daydreaming by now).<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> The rest will hope that I elaborate on what “P = NP” is very soon. Well, here it is reader:</p>
-<p>The P vs NP problem is the most famous open question in computer science.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> In a few words, the problem is: “if we can check a solution quickly, does that mean we can create that solution quickly?” Here, P refers to the problems that can be solved quickly, and NP refers to the problems that can be verified quickly. Thus, “P = NP” means that if a solution can be verified quickly, it can be solved quickly.</p>
-<p>The canonical example is Sudoku. We can write a program to check whether or not a solution is valid quickly. However, there is no known program which can start with a blank grid and fill in all the squares quickly. Computer scientists (and Sudoku lovers) are asking: “will we ever find a better program?”</p>
-<p>Most computer scientists believe that P != NP, but no one has found a proof yet. I personally hope that P = NP because this is the chaotic evil scenario, as this would break our existing cryptography systems and probably everything else we hold near and dear.</p>
-<p>Solving this problem either way would have massive implications for the world. The P vs NP problem is one of the Clay Institute Millennium Problems, a “Most Wanted” list of open problems in math and physics where a solution holds a 1 million dollar bounty. I think P vs NP is the most important problem because it is like a key to unlocking the rest of the universe’s mysteries.</p>
+<p>A mathematically-inclined (and perhaps jocular) reader at this point will think “yes, when N=1.&quot; A reader with a background in computer science (but is not, say, a theoretical computer science professor) will gaze in the foreground, trying to remember the contours of this problem from their algorithms class. A reader who is struggling to understand the footnotes will also probably not understand how the prose got to this point, along with the reader who was skimming these words (and is daydreaming by now).<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> The rest will hope that I elaborate on what “P = NP” is very soon. Well, here it is reader:</p>
+<p>The <em>P vs NP</em> problem is the most famous open question in computer science.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> In a few words, the problem is: “if we can check a solution quickly, does that mean we can could have found that solution quickly?”<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Here, <em>P</em> refers to the problems that can be solved quickly, and <em>NP</em> refers to the problems that can be verified quickly.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> Thus, “P = NP” means that if a solution can be verified quickly, it can be solved quickly.</p>
+<p>The canonical example of this is Sudoku. For this game, we can write a program to check whether or not a solution is valid quickly; however, as Sudoku grids grow larger, the time to solve it grows exponentially; thus, there is no known program which can start with a blank grid and fill in all the squares quickly. Computer scientists (and Sudoku lovers) are asking: “will we ever find a better program?”<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> In many cases, a problem seemed slow until someone found a quick program for it, but others, like Sudoku and and the <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling Salesman problem</a>, remain &ldquo;slow.&rdquo;</p>
+<p>Most computer scientists believe that P != NP, but no one has found a proof yet.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> I personally hope that P = NP because this is the chaotic evil scenario, as this would break our existing cryptography systems and probably everything else we hold near and dear. (In the words of one computer scientist: &ldquo;If P = NP then public-key cryptography is impossible&rdquo;).<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></p>
+<p>Solving this problem either way would have massive implications for the world. The <em>P vs NP</em> problem is one of the Clay Institute Millennium Problems, a “Most Wanted” list of open problems in math and physics where a solution holds a 1 million dollar bounty. I think <em>P vs NP</em> is the most important problem because it is like a key to unlocking the rest of the universe’s mysteries.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -289,23 +285,35 @@
 <li id="fn:4" role="doc-endnote">
 <p>I suppose this depends on what one’s definition of “famous” is. If one were to collect a room-full of software engineers, computer science professors and students, I have no doubt that the room would agree that P vs NP is the most famous question in computer science. However, if one were to collect a representative sample of Americans, the consensus would be different. Through various conversations I’ve had, I have come to believe a significant fraction (perhaps even a majority) of Americans do not have a vague idea of what computer science is, and likely confuse it with information technology or electrical engineering. Thus, I believe that a room of “average” (that is, a representative sample) of Americans would converge on “what is computer science?” when asked what is the most famous open question in computer science.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
+<li id="fn:5" role="doc-endnote">
+<p>&ldquo;Quickly&rdquo; means in polynomial time; that is, if we have a problem with an input size <em>x</em>, the time <em>t</em> to solve the problem can be expressed as a sum of polynomial terms (e.g., $t = x^2 + 3x + 6$).&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p><em>P</em> is technically the set of all polynomial-time problems and <em>NP</em> is the set of nondeterministic polynomial problems.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>&ldquo;Program&rdquo; here is shorthand for algorithm, a list of instructions to solve a problem.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p><a href="https://www.cs.umd.edu/~gasarch/papers/poll.pdf">Gasarch, &ldquo;SIGACT News Complexity Theory Column 36&rdquo;</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p><a href="https://people.cs.uchicago.edu/~fortnow/papers/pnp-cacm.pdf">Fortnow, &ldquo;The Status of the P versus NP Problem&rdquo;</a>&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
 </section>
 
     </div>
 
     <hr />
-
     <div class="center">
       <h2><em>Recommended</em></h2>
-
       <div>
         <div>
           
           
             <div>
               
-
                 <div>
                   <div class="">
   <div class="row">
@@ -349,10 +357,8 @@
   }
 </style>
 
-
                 </div>
               
-
                 <div>
                   <div class="">
   <div class="row">
@@ -396,10 +402,8 @@
   }
 </style>
 
-
                 </div>
               
-
                 <div>
                   <div class="">
   <div class="row">
@@ -442,7 +446,6 @@
     display: table;
   }
 </style>
-
 
                 </div>
               
