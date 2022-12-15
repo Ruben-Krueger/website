@@ -1,18 +1,19 @@
-<div class='header header-fix'>
+<div class="header header-fix">
   <a class="header-logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   <div class="menu-main">
-      <ul style="list-style: none">
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-          <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent " main" . }} active{{ end }}">
-            <a style="color: black" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-          </li>
-        {{end}}
-      </ul>
+    <ul style="list-style: none">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        <li
+          class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent " main" . }}
+            active
+          {{ end }}"
+        >
+          <a style="color: black" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
   </div>
-
-
-
 
   <!--     hack for mobile devices -->
   <!-- TODO: Fix css -->
@@ -20,32 +21,31 @@
     <ul>
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
-      <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent " main" . }} active{{ end }}">
-        <a style="color: black" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-      </li>
-      {{end}}
+        <li
+          class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent " main" . }}
+            active
+          {{ end }}"
+        >
+          <a style="color: black" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
     </ul>
-   
   </div>
-
- 
-
-</div> 
+</div>
 
 <style>
-
-    @media (max-width: 499px) {
-      .mobile-nav {
-        display: inline;
-      }
-      ul li{
-        display: inline;
-      }
+  @media (max-width: 499px) {
+    .mobile-nav {
+      display: inline;
     }
-
-    @media (min-width: 500px) {
-      .mobile-nav {
-        display: none;
-      }
+    ul li {
+      display: inline;
     }
+  }
+
+  @media (min-width: 500px) {
+    .mobile-nav {
+      display: none;
+    }
+  }
 </style>

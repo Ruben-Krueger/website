@@ -17,7 +17,7 @@ paginate = 3
 [params]
   google_analytics_id = ""
   twitter_handle = "@rubenkrueger_"
-  showAuthorOnHomepage = false
+  showAuthorOnHomepage = true
   showAuthorOnPosts = false
   showPostsOnHomepage = false
   addFrame = true

@@ -6,7 +6,10 @@
   "dependencies": {
     "hugo-lunr": "^0.0.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "prettier-plugin-go-template": "^0.0.13"
+  },
   "scripts": {
     "index": "hugo-lunr",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -39,25 +39,26 @@
 
 <body class='page frame '>
   <div id="wrapper" class="wrapper">
-    <div class='header header-fix'>
+    <div class="header header-fix">
   <a class="header-logo" href="/">Ruben Krueger</a>
   <div class="menu-main">
-      <ul style="list-style: none">
-        
-        
-          <li class="menu-item-blog">
-            <a style="color: black" href="/posts/">Blog</a>
-          </li>
-        
-          <li class="menu-item-contact">
-            <a style="color: black" href="/pages/contact/">Contact</a>
-          </li>
-        
-      </ul>
+    <ul style="list-style: none">
+      
+      
+        <li
+          class="menu-item-blog"
+        >
+          <a style="color: black" href="/posts/">Blog</a>
+        </li>
+      
+        <li
+          class="menu-item-contact"
+        >
+          <a style="color: black" href="/pages/contact/">Contact</a>
+        </li>
+      
+    </ul>
   </div>
-
-
-
 
   
   
@@ -65,61 +66,62 @@
     <ul>
       
       
-      <li class="menu-item-blog">
-        <a style="color: black" href="/posts/">Blog</a>
-      </li>
+        <li
+          class="menu-item-blog"
+        >
+          <a style="color: black" href="/posts/">Blog</a>
+        </li>
       
-      <li class="menu-item-contact">
-        <a style="color: black" href="/pages/contact/">Contact</a>
-      </li>
+        <li
+          class="menu-item-contact"
+        >
+          <a style="color: black" href="/pages/contact/">Contact</a>
+        </li>
       
     </ul>
-   
   </div>
-
- 
-
-</div> 
-
-<style>
-
-    @media (max-width: 499px) {
-      .mobile-nav {
-        display: inline;
-      }
-      ul li{
-        display: inline;
-      }
-    }
-
-    @media (min-width: 500px) {
-      .mobile-nav {
-        display: none;
-      }
-    }
-</style>
-    
-
-<div class="content">
-  <p>Find articles, tutorials, and more!</p>
-
 </div>
 
+<style>
+  @media (max-width: 499px) {
+    .mobile-nav {
+      display: inline;
+    }
+    ul li {
+      display: inline;
+    }
+  }
 
-<form action="/search" method="get">
+  @media (min-width: 500px) {
+    .mobile-nav {
+      display: none;
+    }
+  }
+</style>
+
+    
+  <div class="content">
+    <p>Find articles, tutorials, and more!</p>
+
+  </div>
+
+  <form action="/search" method="get">
     <div class="button-input">
       <label for="i-query">Search</label>
-      <input id="i-query" name="query" type="text" autofocus="autofocus" value="">
+      <input
+        id="i-query"
+        name="query"
+        type="text"
+        autofocus="autofocus"
+        value=""
+      />
       <button class="btn">Search</button>
     </div>
   </form>
 
-
-<ul id="results">
-    <li>
-
-    </li>
-</ul>
+  <ul id="results">
+    <li></li>
+  </ul>
 
     <div class="footer">
   
@@ -166,17 +168,20 @@
   
 
   
+  
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-131532113-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131532113-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-131532113-1');
-</script>
-
+    gtag("config", "UA-131532113-1");
+  </script>
 
 
 

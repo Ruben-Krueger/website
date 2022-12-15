@@ -1,22 +1,23 @@
 {{ define "main" }}
+  <div class="content">
+    {{ .Content }}
+  </div>
 
-<div class="content">
-  {{.Content}}
-</div>
-
-
-<form action="/search" method="get">
+  <form action="/search" method="get">
     <div class="button-input">
       <label for="i-query">Search</label>
-      <input id="i-query" name="query" type="text" autofocus="autofocus" value="">
+      <input
+        id="i-query"
+        name="query"
+        type="text"
+        autofocus="autofocus"
+        value=""
+      />
       <button class="btn">Search</button>
     </div>
   </form>
 
-
-<ul id="results">
-    <li>
-
-    </li>
-</ul>
+  <ul id="results">
+    <li></li>
+  </ul>
 {{ end }}

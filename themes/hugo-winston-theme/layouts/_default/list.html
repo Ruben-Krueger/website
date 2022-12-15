@@ -2,7 +2,11 @@
 
 {{ define "main" }}
   <div class="intro">
-    <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+    <h1>
+      {{ .Title }}{{ if .Site.Params.addDot }}
+        <span class="dot">.</span>
+      {{ end }}
+    </h1>
     {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
   </div>
   <div>
@@ -15,28 +19,27 @@
       {{ end }}
     </div>
     <div class="article-category" style="flex: 10%">
-      <h2>Categories</h2> 
+      <h2>Categories</h2>
 
       <div>
         <ul>
-            {{ range $key, $taxonomy := .Site.Taxonomies.category }}
-            <li> <a href="{{ "/category" | relLangURL}}/{{ $key | urlize }}">{{ $key }}</a> </li>
-
-            {{ end }}
+          {{ range $key, $taxonomy := .Site.Taxonomies.category }}
+            <li>
+              <a href="{{ "/category" | relLangURL }}/{{ $key | urlize }}"
+                >{{ $key }}</a
+              >
+            </li>
+          {{ end }}
         </ul>
       </div>
-
     </div>
 
     <style>
       @media only screen and (max-width: 992px) {
-            .article-category {
-                display: none;
-            }
+        .article-category {
+          display: none;
         }
+      }
     </style>
-   
-  
   </div>
 {{ end }}
-
