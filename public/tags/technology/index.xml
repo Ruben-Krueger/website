@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technology on Ruben Krueger</title>
+    <link>/tags/technology/</link>
+    <description>Recent content in technology on Ruben Krueger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Dec 2022 17:42:36 +0000</lastBuildDate><atom:link href="/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Empty Promises</title>
+      <link>/posts/empty-promises/</link>
+      <pubDate>Sat, 24 Dec 2022 17:42:36 +0000</pubDate>
+      
+      <guid>/posts/empty-promises/</guid>
+      <description>If you drive on Highway 101 in the Bay Area, you will notice something curious while navigating traffic: most billboard signs advertise companies you’ve never heard of unless you are in “tech.” These companies range in size from billion-dollar behemoths to fledgling startups, but they share one thing in common: they are all, more or less, software companies.
+This observation is the manifestation of a well-known fact: there is a glut of software companies in Silicon Valley — “software is eating the world,” as Marc Andressen famously said.</description>
+    </item>
+    
+  </channel>
+</rss>

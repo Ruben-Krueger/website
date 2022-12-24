@@ -101,6 +101,12 @@
 
     
 
+  <script
+    type="text/javascript"
+    async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?..."
+  ></script>
+
   <div class="blog">
     
     <div class="intro">
@@ -266,7 +272,7 @@
     <div class="content content-list center" style="max-width: 700px">
       <p>I often get asked which open problem in science I think is the most important.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> I always respond, “does P = NP?”<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <p>A mathematically-inclined (and perhaps jocular) reader at this point will think “yes, when N=1.&quot; A reader with a background in computer science (but is not, say, a theoretical computer science professor) will gaze in the foreground, trying to remember the contours of this problem from their algorithms class. A reader who is struggling to understand the footnotes will also probably not understand how the prose got to this point, along with the reader who was skimming these words (and is daydreaming by now).<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> The rest will hope that I elaborate on what “P = NP” is very soon. Well, here it is reader:</p>
-<p>The <em>P vs NP</em> problem is the most famous open question in computer science.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> In a few words, the problem is: “if we can check a solution quickly, does that mean we can could have found that solution quickly?”<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Here, <em>P</em> refers to the problems that can be solved quickly, and <em>NP</em> refers to the problems that can be verified quickly.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> Thus, “P = NP” means that if a solution can be verified quickly, it can be solved quickly.</p>
+<p>The <em>P vs NP</em> problem is the most famous open question in computer science.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> In a few words, the problem is: “if we can check a solution quickly, does that mean we can could have found that solution quickly?”<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Here, <em>P</em> refers to the problems that can be solved quickly, and <em>NP</em> refers to the problems that can be verified quickly.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> Thus, “P = NP” means that if a solution to a problem can be verified quickly, then the solution itself can be found quickly.</p>
 <p>The canonical example of this is Sudoku. For this game, we can write a program to check whether or not a solution is valid quickly; however, as Sudoku grids grow larger, the time to solve it grows exponentially; thus, there is no known program which can start with a blank grid and fill in all the squares quickly. Computer scientists (and Sudoku lovers) are asking: “will we ever find a better program?”<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> In many cases, a problem seemed slow until someone found a quick program for it, but others, like Sudoku and and the <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling Salesman problem</a>, remain &ldquo;slow.&rdquo;</p>
 <p>Most computer scientists believe that P != NP, but no one has found a proof yet.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> I personally hope that P = NP because this is the chaotic evil scenario, as this would break our existing cryptography systems and probably everything else we hold near and dear. (In the words of one computer scientist: &ldquo;If P = NP then public-key cryptography is impossible&rdquo;).<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></p>
 <p>Solving this problem either way would have massive implications for the world. The <em>P vs NP</em> problem is one of the Clay Institute Millennium Problems, a “Most Wanted” list of open problems in math and physics where a solution holds a 1 million dollar bounty. I think <em>P vs NP</em> is the most important problem because it is like a key to unlocking the rest of the universe’s mysteries.</p>
@@ -313,6 +319,51 @@
           
           
             <div>
+              
+                <div>
+                  <div class="">
+  <div class="row">
+    <div class="column">
+      <img src="/images/empty-billboard.jpg" class="summary-image" />
+    </div>
+    <div>
+      <p style="margin-bottom: -15px">
+        <a href="/posts/empty-promises/">Empty Promises</a>
+      </p>
+      <p>Innovation that turned out to be vaporware.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .summary-image {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover !important;
+  }
+
+  .column {
+    float: left;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  @media (max-width: 1000px) {
+    .mobile {
+      display: inline-block;
+    }
+  }
+
+   
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+</style>
+
+                </div>
               
                 <div>
                   <div class="">
@@ -370,51 +421,6 @@
         <a href="/posts/a-paradox/">A paradox</a>
       </p>
       <p>Can a statement be true, and the converse of it also be true?</p>
-    </div>
-  </div>
-</div>
-
-<style>
-  .summary-image {
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    object-fit: cover !important;
-  }
-
-  .column {
-    float: left;
-    padding: 5px;
-    margin: 5px;
-  }
-
-  @media (max-width: 1000px) {
-    .mobile {
-      display: inline-block;
-    }
-  }
-
-   
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-</style>
-
-                </div>
-              
-                <div>
-                  <div class="">
-  <div class="row">
-    <div class="column">
-      <img src="/images/stars.png" class="summary-image" />
-    </div>
-    <div>
-      <p style="margin-bottom: -15px">
-        <a href="/posts/coming-home/">Coming Home</a>
-      </p>
-      <p>There must be more to life.</p>
     </div>
   </div>
 </div>
