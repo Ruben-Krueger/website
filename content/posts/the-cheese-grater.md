@@ -17,7 +17,7 @@ The secondary application consists of, well, more essays. (Much to my chagrin, o
 
 ## Why it sucks
 
-Terrible UI
+**Terrible UI**
 Schools have portals to submit their essays. As someone with basic design experience, the websites are horrifying. For example, here is how I was supposed to select prerequisite courses from one school:
 
 ![Drop-down](/images/what-is-this.png)
