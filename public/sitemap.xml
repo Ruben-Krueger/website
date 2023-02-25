@@ -2,10 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/beware-of-the-man-of-many-aphorisms/</loc>
-    <lastmod>2022-12-25T16:51:43+00:00</lastmod>
-  </url><url>
     <loc>/category/</loc>
+    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/category/essay/</loc>
+    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/false-oracles/</loc>
+    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/technology/</loc>
+    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/beware-of-the-man-of-many-aphorisms/</loc>
     <lastmod>2022-12-25T16:51:43+00:00</lastmod>
   </url><url>
     <loc>/tags/medicine/</loc>
@@ -14,19 +29,7 @@
     <loc>/category/opinion/</loc>
     <lastmod>2022-12-25T16:51:43+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2022-12-25T16:51:43+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2022-12-25T16:51:43+00:00</lastmod>
-  </url><url>
     <loc>/posts/empty-promises/</loc>
-    <lastmod>2022-12-24T17:42:36+00:00</lastmod>
-  </url><url>
-    <loc>/category/essay/</loc>
-    <lastmod>2022-12-24T17:42:36+00:00</lastmod>
-  </url><url>
-    <loc>/tags/technology/</loc>
     <lastmod>2022-12-24T17:42:36+00:00</lastmod>
   </url><url>
     <loc>/tags/science/</loc>
