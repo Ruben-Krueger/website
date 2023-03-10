@@ -13,7 +13,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/style.min.3c85891fb1eb24fbc71b582b8b0f6138d075a16772e00d338ab39a75875e93cf.css">
+  <link rel="stylesheet" href="/css/style.min.66d5774a873f20d8a8aef0d184451ab55b028c1e5ef452e610be2552374ed9d2.css">
   
 
   
@@ -39,33 +39,26 @@
 
 <body class='page frame page-default-list'>
   <div id="wrapper" class="wrapper">
-    <div class='header header-fix'>
+    <div class="header header-fix">
   <a class="header-logo" href="/">Ruben Krueger</a>
   <div class="menu-main">
-      <ul>
-        
-        
-          <li class="menu-item-blog">
-            <a style="color: black" href="/posts/">Blog</a>
-          </li>
-        
-          <li class="menu-item-contact">
-            <a style="color: black" href="/pages/contact/">Contact</a>
-          </li>
-        
-          <li class="menu-item-projects">
-            <a style="color: black" href="/pages/projects/">Projects</a>
-          </li>
-        
-          <li class="menu-item-thoughts">
-            <a style="color: black" href="/pages/thoughts/">Thoughts</a>
-          </li>
-        
-      </ul>
+    <ul style="list-style: none">
+      
+      
+        <li
+          class="menu-item-blog"
+        >
+          <a style="color: black" href="/posts/">Blog</a>
+        </li>
+      
+        <li
+          class="menu-item-contact"
+        >
+          <a style="color: black" href="/pages/contact/">Contact</a>
+        </li>
+      
+    </ul>
   </div>
-
-
-
 
   
   
@@ -73,49 +66,46 @@
     <ul>
       
       
-      <li class="menu-item-blog">
-        <a style="color: black" href="/posts/">Blog</a>
-      </li>
+        <li
+          class="menu-item-blog"
+        >
+          <a style="color: black" href="/posts/">Blog</a>
+        </li>
       
-      <li class="menu-item-contact">
-        <a style="color: black" href="/pages/contact/">Contact</a>
-      </li>
-      
-      <li class="menu-item-projects">
-        <a style="color: black" href="/pages/projects/">Projects</a>
-      </li>
-      
-      <li class="menu-item-thoughts">
-        <a style="color: black" href="/pages/thoughts/">Thoughts</a>
-      </li>
+        <li
+          class="menu-item-contact"
+        >
+          <a style="color: black" href="/pages/contact/">Contact</a>
+        </li>
       
     </ul>
-   
   </div>
-
- 
-
-</div> 
+</div>
 
 <style>
-  .search-icon {
+  @media (max-width: 499px) {
+    .mobile-nav {
+      display: inline;
     }
+    ul li {
+      display: inline;
+    }
+  }
 
-    @media (max-width: 499px) {
-      .mobile-nav {
-        display: inline-block;
-      }
+  @media (min-width: 500px) {
+    .mobile-nav {
+      display: none;
     }
-
-    @media (min-width: 500px) {
-      .mobile-nav {
-        display: none;
-      }
-    }
+  }
 </style>
+
     
   <div class="intro">
-    <h1>personal<span class="dot">.</span></h1>
+    <h1>
+      personal
+        <span class="dot">.</span>
+      
+    </h1>
     
   </div>
   <div>
@@ -126,18 +116,18 @@
       
         <div class="summary">
   
-    <div class="summary-date">Aug 2, 2022</div> 
+    <div class="summary-date">Mar 9, 2023</div> 
   
 
 
   <div class="row">
     <div class="column">
-      <img src="/images/brain-broken.png" class="summary-image"/>
+      <img src="/images/plane_black.jpg" class="summary-image"/>
     </div>
     <div> 
-      <h2 class="summary-title"><a href="/posts/on-loneliness/" style="font-size: 26px; line-height: 24px; margin: 0px">On Loneliness</a></h2>
+      <h2 class="summary-title"><a href="/posts/stuck-in-the-middle/" style="font-size: 26px; line-height: 24px; margin: 0px"></a></h2>
        
-      <p class="summary-description">Notes on a malaise which has an simple cure, yet seems out of reach.</p>    
+      <p class="summary-description"></p>    
     </div>
   </div>
 </div>
@@ -180,37 +170,52 @@
       
     </div>
     <div class="article-category" style="flex: 10%">
-      <h2>Categories</h2> 
+      <h2>Categories</h2>
 
       <div>
         <ul>
-            
-            <li> <a href="/category/opinion">opinion</a> </li>
-
-            
-            <li> <a href="/category/other">other</a> </li>
-
-            
-            <li> <a href="/category/personal">personal</a> </li>
-
-            
-            <li> <a href="/category/tutorial">tutorial</a> </li>
-
-            
+          
+            <li>
+              <a href="/category/essay"
+                >essay</a
+              >
+            </li>
+          
+            <li>
+              <a href="/category/opinion"
+                >opinion</a
+              >
+            </li>
+          
+            <li>
+              <a href="/category/other"
+                >other</a
+              >
+            </li>
+          
+            <li>
+              <a href="/category/personal"
+                >personal</a
+              >
+            </li>
+          
+            <li>
+              <a href="/category/tutorial"
+                >tutorial</a
+              >
+            </li>
+          
         </ul>
       </div>
-
     </div>
 
     <style>
       @media only screen and (max-width: 992px) {
-            .article-category {
-                display: none;
-            }
+        .article-category {
+          display: none;
         }
+      }
     </style>
-   
-  
   </div>
 
     <div class="footer">
@@ -259,9 +264,20 @@
 
   
   
-  
-    
-  
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-131532113-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-131532113-1");
+  </script>
+
 
 
 </body>
