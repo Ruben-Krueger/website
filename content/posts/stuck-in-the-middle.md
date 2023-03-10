@@ -1,9 +1,9 @@
 ---
-title: ""
+title: "Stuck in the middle"
 date: 2023-03-09
-description: ""
+description: "My life is stuck between two paths."
 image: images/plane_black.jpg
-caption: 'My life is between two paths.'
+caption: 'Photo by Adam Birkett on Unsplash'
 draft: false
 category: personal
 tags: personal
