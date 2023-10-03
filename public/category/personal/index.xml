@@ -6,15 +6,14 @@
     <description>Recent content in personal on Ruben Krueger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/category/personal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2023 14:19:31 +0000</lastBuildDate><atom:link href="/category/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Stuck in the middle</title>
-      <link>/posts/stuck-in-the-middle/</link>
-      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      <title>A Transition</title>
+      <link>/posts/a-transition/</link>
+      <pubDate>Tue, 03 Oct 2023 14:19:31 +0000</pubDate>
       
-      <guid>/posts/stuck-in-the-middle/</guid>
-      <description>My life hangs in the balance; there are two paths in front of me, and I don’t control which one my life takes.
-I applied to dozens of medical schools, and almost every single one has rejected me — except for one school I interviewed at in January, and I am waiting to hear back from. The medical school application process is long, but to not have an acceptance this late is not a good sign.</description>
+      <guid>/posts/a-transition/</guid>
+      <description>Recently, I left the world of software engineering and startups to enter academic clinical research. Specifically, I work now as a Data Analyst at the Brain Stimulation Lab at Stanford. The lab studies the use of neuromodulation (i.e., non-invasive methods of altering brain activity) in psychiatric diseases like depression and OCD.Thus, instead of building a website, I work on data pipelines and the analysis of neuroimaging data (e.g., MRI and EEG).</description>
     </item>
     
   </channel>

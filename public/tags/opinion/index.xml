@@ -6,7 +6,16 @@
     <description>Recent content in opinion on Ruben Krueger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 May 2023 14:09:35 -0500</lastBuildDate><atom:link href="/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2023 14:19:31 +0000</lastBuildDate><atom:link href="/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Transition</title>
+      <link>/posts/a-transition/</link>
+      <pubDate>Tue, 03 Oct 2023 14:19:31 +0000</pubDate>
+      
+      <guid>/posts/a-transition/</guid>
+      <description>Recently, I left the world of software engineering and startups to enter academic clinical research. Specifically, I work now as a Data Analyst at the Brain Stimulation Lab at Stanford. The lab studies the use of neuromodulation (i.e., non-invasive methods of altering brain activity) in psychiatric diseases like depression and OCD.Thus, instead of building a website, I work on data pipelines and the analysis of neuroimaging data (e.g., MRI and EEG).</description>
+    </item>
+    
     <item>
       <title>A Runner&#39;s Guide to Calf Strains</title>
       <link>/posts/a-runners-guide-to-calf-strains/</link>

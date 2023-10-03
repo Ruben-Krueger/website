@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/posts/a-transition/</loc>
+    <lastmod>2023-10-03T14:19:31+00:00</lastmod>
+  </url><url>
+    <loc>/category/</loc>
+    <lastmod>2023-10-03T14:19:31+00:00</lastmod>
+  </url><url>
+    <loc>/tags/opinion/</loc>
+    <lastmod>2023-10-03T14:19:31+00:00</lastmod>
+  </url><url>
+    <loc>/category/personal/</loc>
+    <lastmod>2023-10-03T14:19:31+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-10-03T14:19:31+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2023-10-03T14:19:31+00:00</lastmod>
+  </url><url>
     <loc>/posts/a-runners-guide-to-calf-strains/</loc>
     <lastmod>2023-05-13T14:09:35-05:00</lastmod>
   </url><url>
-    <loc>/category/</loc>
-    <lastmod>2023-05-13T14:09:35-05:00</lastmod>
-  </url><url>
     <loc>/category/essay/</loc>
-    <lastmod>2023-05-13T14:09:35-05:00</lastmod>
-  </url><url>
-    <loc>/tags/opinion/</loc>
-    <lastmod>2023-05-13T14:09:35-05:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2023-05-13T14:09:35-05:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2023-05-13T14:09:35-05:00</lastmod>
   </url><url>
     <loc>/posts/false-oracles/</loc>
