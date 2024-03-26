@@ -6,7 +6,16 @@
     <description>Recent content in Category on Ruben Krueger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Oct 2023 14:19:31 +0000</lastBuildDate><atom:link href="/category/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="/category/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>opinion</title>
+      <link>/category/opinion/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/category/opinion/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>personal</title>
       <link>/category/personal/</link>
@@ -22,15 +31,6 @@
       <pubDate>Sat, 13 May 2023 14:09:35 -0500</pubDate>
       
       <guid>/category/essay/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opinion</title>
-      <link>/category/opinion/</link>
-      <pubDate>Sun, 25 Dec 2022 16:51:43 +0000</pubDate>
-      
-      <guid>/category/opinion/</guid>
       <description></description>
     </item>
     

@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/a-transition/</loc>
-    <lastmod>2023-10-03T14:19:31+00:00</lastmod>
-  </url><url>
     <loc>/category/</loc>
+    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/category/opinion/</loc>
+    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/work-that-matters/</loc>
+    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/a-transition/</loc>
     <lastmod>2023-10-03T14:19:31+00:00</lastmod>
   </url><url>
     <loc>/tags/opinion/</loc>
@@ -15,9 +24,6 @@
     <lastmod>2023-10-03T14:19:31+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2023-10-03T14:19:31+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2023-10-03T14:19:31+00:00</lastmod>
   </url><url>
     <loc>/posts/a-runners-guide-to-calf-strains/</loc>
@@ -36,9 +42,6 @@
     <lastmod>2022-12-25T16:51:43+00:00</lastmod>
   </url><url>
     <loc>/tags/medicine/</loc>
-    <lastmod>2022-12-25T16:51:43+00:00</lastmod>
-  </url><url>
-    <loc>/category/opinion/</loc>
     <lastmod>2022-12-25T16:51:43+00:00</lastmod>
   </url><url>
     <loc>/posts/empty-promises/</loc>
