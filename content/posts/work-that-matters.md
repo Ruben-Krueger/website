@@ -12,7 +12,7 @@ Two men were sitting at the bar after work, as men do. The first man, Larry the 
 
 The other man, Barry Bottle Cap, nodded and sipped his beer. “Yur, I see,” Barry said.
 
-“I don’t get paid enough for what I do,” Larry said. Despite his years of education and the prestigious status of his profession, he felt an unhappiness on the inside; Larry’s high-minded ideals of lawyering did not match his day-to-day experiences of the job. “I wanted to fight for justice, protect the innocent, and prosecute the guilty.” He said.
+“I don’t get paid enough for what I do,” Larry said. Despite his years of education and the prestigious status of his profession, he felt an unhappiness on the inside; Larry’s high-minded ideals of lawyering did not match his day-to-day experiences of the job. “I wanted to fight for justice, protect the innocent, and prosecute the guilty.” He said. "I don't feel like my work is important, nor do I see the fruits of my labor."
 
 “Yur, I see,” Barry said.
 
